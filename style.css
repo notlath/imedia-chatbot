@@ -1,6 +1,5 @@
 /* ── Design Tokens ── */
-.gc-chatbot-window,
-.gc-chatbot-toggle {
+.gc-chatbot-window {
   --gc-bg-primary: #032340;
   --gc-bg-surface: #ffffff;
   --gc-btn-accent: #e7005e;
@@ -22,6 +21,31 @@
   --gc-msg-gap: 10px;
 
   /* Typography tokens */
+  --gc-font-body:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --gc-font-heading: "Montserrat", sans-serif;
+  --gc-font-mono: "SF Mono", Monaco, Consolas, monospace;
+}
+
+/* Design tokens for toggle button (inherits from window when both present) */
+.gc-chatbot-toggle {
+  --gc-bg-primary: #032340;
+  --gc-bg-surface: #ffffff;
+  --gc-btn-accent: #e7005e;
+  --gc-btn-info: #06a9ec;
+  --gc-text-light: #ffffff;
+  --gc-bg-chat: #f0f4f8;
+  --gc-text-body: #1e293b;
+  --gc-text-muted: #64748b;
+  --gc-border-subtle: rgba(3, 35, 64, 0.08);
+  --gc-shadow-sm: 0 1px 3px rgba(3, 35, 64, 0.06);
+  --gc-shadow-md: 0 8px 30px rgba(3, 35, 64, 0.12);
+  --gc-shadow-lg: 0 16px 48px rgba(3, 35, 64, 0.18);
+  --gc-radius: 16px;
+  --gc-radius-sm: 12px;
+  --gc-radius-pill: 24px;
+  --gc-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --gc-msg-gap: 10px;
   --gc-font-body:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --gc-font-heading: "Montserrat", sans-serif;
@@ -60,11 +84,13 @@
 }
 
 .gc-toggle-label {
+  all: unset !important;
   font-family: var(--gc-font-heading) !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   letter-spacing: 0.3px !important;
   white-space: nowrap !important;
+  display: block !important;
 }
 
 .gc-chatbot-toggle:hover {
@@ -84,6 +110,8 @@
   height: 22px !important;
   flex-shrink: 0 !important;
   transition: transform 0.3s var(--gc-transition) !important;
+  stroke: currentColor !important;
+  fill: none !important;
 }
 
 .gc-chatbot-toggle.active svg {
@@ -176,8 +204,11 @@
 }
 
 .gc-chat-header-avatar svg {
+  all: unset !important;
   width: 100% !important;
   height: 100% !important;
+  stroke: currentColor !important;
+  fill: none !important;
 }
 
 .gc-chat-header-info {
@@ -187,10 +218,12 @@
 }
 
 .gc-chat-header-info span {
+  all: unset !important;
   font-size: 12px !important;
   opacity: 0.75 !important;
   font-weight: 400 !important;
   letter-spacing: 0.2px !important;
+  display: block !important;
 }
 
 .gc-chat-header h2 {
@@ -231,6 +264,11 @@
   outline-offset: 1px !important;
 }
 
+.gc-chat-close svg {
+  stroke: currentColor !important;
+  fill: none !important;
+}
+
 /* ── Messages Area ── */
 .gc-chat-messages {
   flex: 1 !important;
@@ -263,12 +301,14 @@
 
 /* ── Message Bubbles ── */
 .gc-msg {
+  all: unset !important;
   max-width: 82% !important;
   padding: 12px 16px !important;
   font-size: 14px !important;
   line-height: 1.55 !important;
   animation: gc-msg-appear 0.3s ease-out !important;
   position: relative !important;
+  display: block !important;
 }
 
 @keyframes gc-msg-appear {
@@ -302,6 +342,7 @@
 
 /* ── System Messages (Disclaimers/Notices) ── */
 .gc-msg-system {
+  all: unset !important;
   text-align: center !important;
   font-size: 11.5px !important;
   color: var(--gc-text-muted) !important;
@@ -309,6 +350,7 @@
   line-height: 1.45 !important;
   font-family: var(--gc-font-body) !important;
   animation: gc-msg-appear 0.4s ease-out !important;
+  display: block !important;
 }
 
 /* ── Input Wrapper & Quick Replies ── */
@@ -445,6 +487,8 @@
   width: 18px !important;
   height: 18px !important;
   flex-shrink: 0 !important;
+  stroke: currentColor !important;
+  fill: none !important;
 }
 
 /* ── Typing Indicator ── */
@@ -462,12 +506,14 @@
 }
 
 .gc-typing-indicator span {
+  all: unset !important;
   width: 8px !important;
   height: 8px !important;
   border-radius: 50% !important;
   background: var(--gc-btn-info) !important;
   animation: gc-typingBounce 1.4s infinite ease-in-out both !important;
   will-change: transform, opacity !important;
+  display: inline-block !important;
 }
 
 .gc-typing-indicator span:nth-child(1) {
@@ -499,8 +545,10 @@
 
 /* ── Markdown Content in Bot Messages ── */
 .gc-msg-content {
+  all: unset !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
+  display: block !important;
 }
 
 .gc-msg.bot .gc-msg-content strong {
@@ -537,13 +585,17 @@
 
 .gc-msg.bot .gc-msg-content ul,
 .gc-msg.bot .gc-msg-content ol {
+  all: unset !important;
   margin: 6px 0 !important;
   padding-left: 20px !important;
+  display: block !important;
 }
 
 .gc-msg.bot .gc-msg-content li {
+  all: unset !important;
   margin: 4px 0 !important;
   line-height: 1.5 !important;
+  display: list-item !important;
 }
 
 .gc-msg.bot .gc-msg-content h1,
@@ -552,11 +604,13 @@
 .gc-msg.bot .gc-msg-content h4,
 .gc-msg.bot .gc-msg-content h5,
 .gc-msg.bot .gc-msg-content h6 {
+  all: unset !important;
   font-family: var(--gc-font-heading) !important;
   color: var(--gc-bg-primary) !important;
   margin: 10px 0 4px !important;
   line-height: 1.3 !important;
   font-weight: 600 !important;
+  display: block !important;
 }
 
 .gc-msg.bot .gc-msg-content h1 {
@@ -584,14 +638,17 @@
 }
 
 .gc-msg.bot .gc-msg-content hr {
+  all: unset !important;
   border: none !important;
   height: 1px !important;
   background: var(--gc-border-subtle) !important;
   margin: 8px 0 !important;
+  display: block !important;
 }
 
 /* ── Message Timestamps ── */
 .gc-msg-time {
+  all: unset !important;
   display: block !important;
   font-size: 10px !important;
   color: var(--gc-text-muted) !important;
@@ -605,6 +662,7 @@
 
 /* ── Status Dot ── */
 .gc-status-dot {
+  all: unset !important;
   position: absolute !important;
   bottom: -2px !important;
   right: -2px !important;
@@ -616,6 +674,7 @@
   box-shadow: 0 0 6px rgba(34, 197, 94, 0.4) !important;
   animation: gc-status-glow 2s ease-in-out infinite !important;
   z-index: 2 !important;
+  display: block !important;
 }
 
 @keyframes gc-status-glow {
