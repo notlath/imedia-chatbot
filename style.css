@@ -55,7 +55,7 @@
 .gc-chatbot-toggle {
   all: unset !important;
   position: fixed !important;
-  bottom: 24px !important;
+  bottom: calc(24px + 66px) !important; /* Avoid 65.59px footer */
   right: 24px !important;
   z-index: 99999 !important;
   padding: 14px 22px !important;
@@ -129,7 +129,7 @@
 /* ── Chat Window ── */
 .gc-chatbot-window {
   position: fixed;
-  bottom: 100px;
+  bottom: calc(100px + 66px); /* Avoid 65.59px footer */
   right: 24px;
   z-index: 999999 !important;
   width: 380px;
@@ -740,6 +740,7 @@
 
   /* Reduce rendering cost on mobile */
   .gc-chatbot-toggle {
+    bottom: calc(24px + 66px) !important; /* Avoid 65.59px footer */
     animation: none !important;
     box-shadow: 0 4px 12px rgba(231, 0, 94, 0.3) !important;
     will-change: auto !important;
