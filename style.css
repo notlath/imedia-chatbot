@@ -42,23 +42,29 @@
   bottom: 24px !important;
   right: 24px !important;
   z-index: 99999 !important;
-  width: 60px !important;
-  height: 60px !important;
-  border-radius: 50% !important;
+  padding: 14px 22px !important;
+  border-radius: var(--gc-radius-pill) !important;
   background: linear-gradient(135deg, var(--gc-btn-accent), #c40050) !important;
   color: var(--gc-text-light) !important;
-  box-shadow:
-    0 4px 16px rgba(231, 0, 94, 0.35),
-    0 0 0 0 rgba(231, 0, 94, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(231, 0, 94, 0.35) !important;
   cursor: pointer !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  gap: 8px !important;
   transition:
     transform 0.25s var(--gc-transition),
     box-shadow 0.25s var(--gc-transition) !important;
   animation: gc-toggle-pulse 3s ease-in-out infinite !important;
   will-change: transform, box-shadow !important;
+}
+
+.gc-toggle-label {
+  font-family: var(--gc-font-heading) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  white-space: nowrap !important;
 }
 
 .gc-chatbot-toggle:hover {
@@ -74,8 +80,9 @@
 }
 
 .gc-chatbot-toggle svg {
-  width: 26px !important;
-  height: 26px !important;
+  width: 22px !important;
+  height: 22px !important;
+  flex-shrink: 0 !important;
   transition: transform 0.3s var(--gc-transition) !important;
 }
 
