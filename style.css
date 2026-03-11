@@ -498,7 +498,8 @@
 }
 
 .gc-typing-indicator span {
-  all: unset !important;
+  padding: 0 !important;
+  margin: 0 !important;
   width: 8px !important;
   height: 8px !important;
   border-radius: 50% !important;
