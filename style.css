@@ -567,7 +567,7 @@
   text-decoration: underline !important;
   text-decoration-color: rgba(6, 169, 236, 0.3) !important;
   text-underline-offset: 2px !important;
-  word-break: break-all !important;
+  word-break: break-word !important;
   transition: text-decoration-color 0.2s ease-out !important;
 }
 
