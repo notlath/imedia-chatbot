@@ -255,8 +255,8 @@ ROLE & BEHAVIOR:
       </div>
 
       <div class="gc-chat-messages" id="chatMessages">
-        <div class="gc-msg bot">Hi! 👋 I'm the Inventive Media AI assistant. How can I help you today?</div>
-        <div class="gc-msg-system" id="chatSystemMsg">Note: For the most accurate information on course fees and schedules, just ask! I'll gladly point you to the right page on our website.</div>
+        <div class="gc-msg bot"><p>Hi! 👋 I'm the Inventive Media AI assistant. How can I help you today?</p></div>
+        <div class="gc-msg-system" id="chatSystemMsg"><p>Note: For the most accurate information on course fees and schedules, just ask! I'll gladly point you to the right page on our website.</p></div>
       </div>
 
       <div class="gc-chat-input-wrapper">
