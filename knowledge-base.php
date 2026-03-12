@@ -359,6 +359,322 @@ Microsoft Azure Fundamentals: #fees https://www.inventivemedia.com.ph/microsoft-
 Microsoft Azure Administrator: #fees https://www.inventivemedia.com.ph/microsoft-azure-administrator-certification-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/microsoft-azure-administrator-certification-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/microsoft-azure-administrator-certification-training-philippines/#register
 ITIL v4 Foundation: #fees https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/#fees | #schedule https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/#schedule | #register https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/#register
 
+=== FACULTY & INSTRUCTORS (DETAILED PROFILES) ===
+
+FACULTY PAGE: https://www.inventivemedia.com.ph/faculty/
+
+Inventive Media's faculty consists of 37 experienced industry professionals and certified instructors. Below are their detailed profiles:
+
+--- INSTRUCTOR #1 ---
+Name: Henry N. Ong II
+Title: Founder
+Profile: https://www.inventivemedia.com.ph/faculty/
+Note: Pioneer of CMS web development courses in the Philippines. Founded Inventive Media in 2006.
+
+--- INSTRUCTOR #2 ---
+Name: Dianna A. Azores
+Title: Marketing Communication Consultant
+Profile: https://www.inventivemedia.com.ph/dianna-a-azores/
+Skills: SEO, SEM, Social Media Marketing, Google AdWords, Google Analytics, Email Marketing, Lead Generation, Marketing Research, Content Writing, Canva
+Experience: Marketing Communications Consultant at Inventive Media (Jul 2022–Present); Marketing Manager at Inventive Media (Nov 2018–Jun 2022); Senior Marketing Executive at Inventive Media (Aug 2017–Oct 2018); Digital Marketing Specialist/Instructor at Inventive Media (Sep 2015–Jul 2017)
+Education: Pamantasan ng Lungsod ng Maynila — BS Marketing
+Certifications: Google Analytics, Google Ads, HubSpot Inbound Marketing, HubSpot Content Marketing, Hootsuite Social Marketing
+Awards: Women Who Lead Award (Inventive Media 2023), Certified Top Performing Employee Award 2021
+
+--- INSTRUCTOR #3 ---
+Name: Joandlyn Mariano
+Title: President & Growth Strategy Director
+Profile: https://www.inventivemedia.com.ph/joandlyn-mariano/
+Skills: SEO, SEM, Content Writing, Social Media Marketing, Digital Marketing, Google AdWords, Email Marketing, HTML, CSS, Management
+Experience: President & CSO at Inventive Media (Oct 2018–Present); General Manager at Inventive Media (Oct 2015–Sep 2018); Digital Marketing Manager at Inventive Media (2014-2015); Sales Representative at Concentrix (2012)
+Education: Pamantasan ng Lungsod ng Maynila — BS Marketing
+
+--- INSTRUCTOR #4 ---
+Name: Jan Panado
+Title: Web Developer
+Profile: https://www.inventivemedia.com.ph/jan-panado/
+Skills: HTML, CSS, Bootstrap, PHP, Laravel, WordPress, JavaScript, jQuery, MySQL, React, Angular, Vue, Python, Ruby on Rails, Java, C#, .NET
+Experience: Web Development Instructor at Inventive Media (Feb 2016–Present); Web Developer at Inventive Media (2016–Present)
+Education: Colegio De San Juan De Letran — BS Information Technology
+Certifications: MTA (HTML/CSS, Python, JavaScript, Database Administration, Windows OS, Security, Networking, Mobility), MOS (Word, Excel, PowerPoint, Access, Outlook), ACA (Photoshop, Dreamweaver, Animate, Premiere Pro)
+
+--- INSTRUCTOR #5 ---
+Name: Stephen Singer
+Title: Software Engineer
+Profile: https://www.inventivemedia.com.ph/stephen-s-singer/
+Skills: HTML, CSS, Bootstrap, PHP, MySQL, Laravel, JavaScript, jQuery, React, Python, Django, Java, Spring Boot, Ruby on Rails, Git, REST API
+Experience: Software Engineer at Yondu, Inc. (Jul 2022–Present); Software Developer at Bizmates Philippines (May 2019–Jul 2022)
+Education: Mapua University — BS Electronics Engineering
+
+--- INSTRUCTOR #6 ---
+Name: Michael S. Riparip
+Title: Network Specialist
+Profile: https://www.inventivemedia.com.ph/michael-s-riparip/
+Skills: Network Security, Cybersecurity, Firewalls, VPN, Cisco Technologies, CCTV, TCP/IP
+Experience: Network Security Specialist with 10+ years experience. Pre-Sales/Implementation Manager at Astoria Technologies; Technical Assistance Manager; Network Engineer at various firms
+Education: STI College — BS Information Technology
+Certifications: CompTIA Network+, CompTIA Security+, Cisco CCNA, Cisco CCNP
+
+--- INSTRUCTOR #7 ---
+Name: Richelle Bondoc
+Title: Digital Marketing Specialist
+Profile: https://www.inventivemedia.com.ph/richelle-marie-bondoc/
+Skills: SEO, SEM, Social Media Marketing, Google AdWords, Google Analytics, Email Marketing, Content Marketing, Facebook Ads, HTML, CSS
+Experience: Digital Marketing Specialist at Inventive Media; SEO Specialist; Social Media Manager; Digital Marketing Instructor
+Education: University of the East — BS Business Administration
+Certifications: Google Ads, Google Analytics, HubSpot Inbound Marketing, HubSpot Email Marketing, Hootsuite Social Marketing
+
+--- INSTRUCTOR #8 ---
+Name: Jansen Ang
+Title: Java Developer
+Profile: https://www.inventivemedia.com.ph/jansen-ang-java-python-trainer/
+Skills: Java, Spring Framework, Python, AWS, Azure, Docker, Kubernetes, MySQL, PostgreSQL, MongoDB, REST API, Microservices
+Experience: Java Developer and Cloud Specialist with extensive enterprise development experience
+Certifications: AWS Certified Solutions Architect Associate, AWS Certified Cloud Practitioner, Azure Fundamentals (AZ-900), Azure Administrator (AZ-104), Oracle Certified Java Programmer
+
+--- INSTRUCTOR #9 ---
+Name: J.R. De Guzman
+Title: Network & Cybersecurity Expert
+Profile: https://www.inventivemedia.com.ph/j-r-de-guzman/
+Skills: AWS, Cisco, Network Security, Cybersecurity, Tenable Nessus, Cloud Computing, Firewalls, Penetration Testing
+Experience: AWS Authorized Instructor; Network Security Consultant; Cybersecurity Specialist with experience in vulnerability assessment and penetration testing
+Certifications: AWS Certified Solutions Architect, AWS Certified Cloud Practitioner, Cisco CCNA, CompTIA Security+
+
+--- INSTRUCTOR #10 ---
+Name: James Santos
+Title: MCT | Database Administrator
+Profile: https://www.inventivemedia.com.ph/james-santos/
+Skills: Microsoft Azure, Database Administration, SQL Server, MySQL, PowerShell, Windows Server, Active Directory, Cloud Computing
+Experience: Senior Database Administrator with extensive experience in enterprise database management; Microsoft Certified Trainer
+Certifications: Microsoft Certified Trainer (MCT), Azure Solutions Architect Expert, Azure Administrator Associate, Azure Database Administrator Associate, Azure Fundamentals, AWS Certified Cloud Practitioner
+
+--- INSTRUCTOR #11 ---
+Name: Elise Aguilar
+Title: Content Marketing Director
+Profile: https://www.inventivemedia.com.ph/elise-aguilar/
+Skills: SEO, Content Strategy, Content Marketing, Social Media Marketing, Copywriting, Email Marketing, Google Analytics, WordPress
+Experience: Content Marketing Director specializing in SEO content strategy and digital marketing campaigns
+Certifications: HubSpot Content Marketing, HubSpot Inbound Marketing, Yoast SEO
+
+--- INSTRUCTOR #12 ---
+Name: Alfie Apodaca
+Title: Google Ads Expert
+Profile: https://www.inventivemedia.com.ph/alfie-apodaca/
+Skills: Google Ads, Google Analytics, PPC, SEM, Social Media Marketing, Facebook Ads, Campaign Management, Digital Marketing Strategy
+Experience: Google Ads Expert with extensive experience in PPC campaign management and optimization; Marketing and ad campaign management specialist
+Certifications: Google Ads Search, Google Ads Display, Google Ads Video, Google Ads Shopping, Google Analytics
+
+--- INSTRUCTOR #13 ---
+Name: Monie Ferran
+Title: MCT, MCP, MCSE, MCSA, MCITP
+Profile: https://www.inventivemedia.com.ph/monie-m-ferran/
+Skills: Windows Server, Active Directory, Microsoft Azure, Hyper-V, System Administration, Cloud Computing, PowerShell, Networking
+Experience: Cloud Solutions Architect and Systems Engineer; Microsoft Certified Trainer with extensive experience in Microsoft technologies and infrastructure
+Certifications: Microsoft Certified Trainer (MCT), MCSE (Cloud Platform & Infrastructure), MCSA (Windows Server 2012/2016), MCITP (Enterprise Administrator), MCP
+
+--- INSTRUCTOR #14 ---
+Name: Wally Lim
+Title: Motion Graphics Artist / SFX Artist
+Profile: https://www.inventivemedia.com.ph/wally-v-lim/
+Skills: Adobe Photoshop, Adobe Illustrator, Adobe InDesign, CorelDraw, Adobe Premiere, Adobe After Effects, Adobe Audition, Sony Vegas, Final Cut Pro, Digital Printing
+Experience: Graphics Specialist/Broadcast Designer/SFX Artist at TV5 ABC Development Corporation (2011–Present); Post Engineer/Motion Graphics Artist at Evolution Post/GMA7 (2010–2011); Multimedia Artist at Sportaclez (2009–2010); Multi Media Designer at U-LEARN Solutions (2006–Present)
+Education: Immaculate Conception College — BS Secondary Education, Major in Math and Science
+
+--- INSTRUCTOR #15 ---
+Name: Monika Ortega
+Title: Web and Multimedia Specialist
+Profile: https://www.inventivemedia.com.ph/monika-ortega/
+Skills: SEO, SEM, Social Media Marketing, Google AdWords, Google Analytics, Lead Generation, Market Research, HTML, CSS, Bootstrap, Adobe Photoshop, Adobe InDesign
+Experience: Demand Generation Manager at Botify (Aug 2022–Present); Director for Partnership Communications at Women in AI (May 2022–Present); Digital Marketing Manager at Element, Inc (Dec 2021–Aug 2022); Head of Marketing at Senti AI (Sep 2019–Dec 2021); Specialist Instructor for Digital Marketing at CIIT College (Jul 2019–Mar 2022)
+Education: De La Salle University — BSC Business Management; Development Academy of the Philippines — Data Analyst
+Certifications: HubSpot Email Marketing, AWS Business Professional, AWS Machine Learning, HubSpot Inbound Marketing
+Awards: #1 Web Designer by DotPH (Apr 2013), 3rd Place Globe Nationwide Teknobiz Idea Challenge (Feb 2009)
+
+--- INSTRUCTOR #16 ---
+Name: Danniel Libor
+Title: Web Developer | Software Engineer
+Profile: https://www.inventivemedia.com.ph/danniel-libor/
+Skills: PHP, Laravel/Lumen, HTML, CSS, Bootstrap, Vue, JavaScript, Node, Express, Electron, Nuxt, Git, MySQL, Vuetify, PHPUnit, Docker, AWS, RabbitMQ
+Experience: Software Engineer at Yondu, Inc (Jul 2022–Present); Full Stack Web Development Instructor at KodeGo (Jan 2023–Present); IT Software Developer at Bizmates Philippines (May 2019–Jul 2022)
+Education: San Beda College of Alabang — BS Information Technology
+Certifications: MTA (Python, HTML/CSS, Mobility, Windows OS, HTML5 App Dev, Database Admin, Software Development), MOS (Word, Excel, PowerPoint, Access), Udemy AWS Certified Developer Associate, Udemy Microservices Architecture
+
+--- INSTRUCTOR #17 ---
+Name: Ced Rick Flores
+Title: Java Developer
+Profile: https://www.inventivemedia.com.ph/ced-rick-flores/
+Skills: HTML, CSS, Bootstrap, PHP, Laravel, Java, SQL, Python, C#, C++, Spring Framework, Elasticsearch, Swagger, PostgreSQL, Redis, JUnit, Mockito
+Experience: Java Developer at Collabera Technologies/myCWT (Feb 2022–Present) — developing microservices with Java and Spring Framework; Associate Software Engineer at Infor (Sep 2020–Feb 2022) — backend and search engine APIs
+Education: University of the Philippines Manila — BS Computer Science (Statistics Track)
+Projects: ProGene (deep learning tool for melanoma prognosis), Scheduling Algorithms Visualizer
+
+--- INSTRUCTOR #18 ---
+Name: Engr. Reynan Gelera
+Title: FDAS Engineer
+Profile: https://www.inventivemedia.com.ph/reynan-a-gelera/
+Skills: Fire Detection and Alarm Systems, CCTV, Electrical Designing, Lead Generation, Sales and Marketing
+Experience: Enterprise Sales Manager at Honeywell Security and Fire (Dec 2015–Dec 2016); Assistant General Manager at HMR Solutions Inc (Nov 2012–Nov 2015); Senior Pre-Sales/Design Engineer at Capital Technology in Qatar (Mar 2008–Mar 2012) — won major projects including New Doha International Airport
+Education: Adamson University — BS Electronics and Communications Engineering; Rizal Technological University — MBA
+Certifications: Registered Electronics and Communications Engineer (PRC), Certified Project Management Associate (Australian Wide Business Training), Edwards Vigilant Fire Alarm Certified Installer
+
+--- INSTRUCTOR #19 ---
+Name: Ellison Bartolome
+Title: MCT | Database Administrator
+Profile: https://www.inventivemedia.com.ph/ellison-bartolome/
+Skills: Microsoft Azure, Database Administration, DB2, MySQL, Teradata, ITIL 4, Linux/Unix/Windows Systems
+Experience: Senior DB2/MySQL DBA at Manulife IT Delivery Center (Apr 2022–Present); Senior Teradata DBA at Teradata/EClaro (Feb 2016–Apr 2022) — Lead DBA for North American accounts; Faculty at UST Computer Science Department (Aug 2013–May 2018) — Best Thesis Adviser Awardee 2018
+Education: University of Santo Tomas — BS Computer Science
+Certifications: Microsoft Certified Trainer, Azure Solutions Architect Expert, Azure Administrator Associate, Azure AI Engineer Associate, Azure AI/Data/AZ-900 Fundamentals, Oracle Cloud Infrastructure Associate, ITIL 4 Foundations, Teradata Certified Professional
+
+--- INSTRUCTOR #20 ---
+Name: Sil Silvestre
+Title: CPA, Digital Marketing Consultant
+Profile: https://www.inventivemedia.com.ph/sil-m-silvestre/
+Skills: SEO, Google AdWords, Digital Media Buying, Content Marketing, Social Media Marketing, Email Marketing, WordPress, Magento, Joomla, Drupal, Amazon Ads, Walmart Ads
+Experience: Senior Advertising Executive at JUVO+ (Oct 2021–Present) — managing $100k monthly ad budget across Amazon, Walmart, Target, eBay; Digital Marketing Coach at ShoreMarketing (Oct 2017–Present); Country Manager at iMoney Philippines (Jun 2013–Sep 2014)
+Education: Pamantasan ng Lungsod ng Maynila — BS Accountancy
+Certifications: Google AdWords, Google Analytics, HubSpot Inbound Marketing
+
+--- INSTRUCTOR #21 ---
+Name: Vincent Valenzuela
+Title: Creative Director | Video Specialist
+Profile: https://www.inventivemedia.com.ph/vincent-valenzuela/
+
+--- INSTRUCTOR #22 ---
+Name: Eizel Arianne Jugueta
+Title: Multimedia & Design Specialist
+Profile: https://www.inventivemedia.com.ph/eizel-arianne-d-c-jugueta/
+Skills: HTML, CSS, Adobe Photoshop, Adobe Lightroom, Adobe Illustrator, Adobe InDesign, Adobe XD, Adobe Animate, Adobe Dreamweaver
+Experience: Graphic Designer at Microsourcing Phils. (Feb 2015–Present) — designs gift & loyalty cards for Moneris Solutions; Web Graphic Designer at Ensogo Phils. (Sep 2014–Dec 2014); Graphics Artist at Unison Computer Systems (Dec 2012–Sep 2014); Internet Marketer/Graphics Artist at Philippine Science Centrum (Feb 2012–Oct 2012)
+Education: ICCT Colleges Foundation Inc. — BS Information Technology
+
+--- INSTRUCTOR #23 ---
+Name: Bienvenido Basal
+Title: Web and Multimedia Specialist
+Profile: https://www.inventivemedia.com.ph/bienvenido-s-basal/
+Skills: HTML, CSS, Bootstrap, PHP, Laravel, CodeIgniter, Java, SQL, Python, C#, C++, Adobe Photoshop, CorelDraw, Adobe Animate, Adobe Premiere, Adobe Captivate, Adobe Dreamweaver, Google Sketchup, Maya, Studio Max
+Experience: Head of MIS Section at Foreign Service Institute, DFA (Apr 2012–Present); Part-Time Lecturer at Inventive Media (Aug 2015–Jun 2019); Part-Time Instructor at Pamantasan ng Valenzuela (2013–Present); IT Professor at multiple institutions
+Education: Soongsil University (Korea) — MEng, Global ICT Convergence; Technological University of the Philippines — MA Education, Major in Educational Technology; Caloocan City Polytechnic College — BS Industrial Education
+
+--- INSTRUCTOR #24 ---
+Name: James Bañez
+Title: Full-Stack Developer
+Profile: https://www.inventivemedia.com.ph/james-banez/
+Skills: HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, Laravel, CodeIgniter, Python, Java, Microsoft Azure, MySQL, Oracle, Google Cloud Platform, C#, ASP.NET, Spring MVC, Django
+Experience: Sr. Specialist at NetSuite Philippines Inc. (2015–Present); Senior Specialist on Applications Development at Maersk Global Services Centres (2014–2015); Sr. Software Analyst and Developer at FurtherEdge Inc. (2013–2014)
+Education: STI College Angeles City — BS Computer Science
+
+--- INSTRUCTOR #25 ---
+Name: Josef Amarra
+Title: Web Developer | Digital Marketing Specialist
+Profile: https://www.inventivemedia.com.ph/josef-amarra/
+Skills: HTML, CSS, Bootstrap, JavaScript, jQuery, Java, Perl, C/C++, C#, .NET, Microsoft SQL Server
+Experience: Co-Founder of MAYANI (May 2019–Present) — agri-ecommerce platform connecting 23,000+ farmers to 10,000+ customers, backed by ADB, AgFunder, World Bank-IFC; Software Engineer at FactSet Philippines (Nov 2010–Apr 2012); Co-owner at Union Digital PH — digital marketing firm
+Education: De La Salle University Manila — BS Computer Science, Software Technology specialization
+
+--- INSTRUCTOR #26 ---
+Name: Justin V. Macugay
+Title: MCP, MCT, MCITP, MCTS
+Profile: https://www.inventivemedia.com.ph/justin-v-macugay/
+Skills: Windows Server, Active Directory, Networking, System Administration, Hyper-V, PowerShell
+Experience: Microsoft Certified Trainer with experience in Windows Server administration and enterprise infrastructure
+Certifications: Microsoft Certified Trainer (MCT), Microsoft Certified Professional (MCP), MCITP, MCTS
+
+--- INSTRUCTOR #27 ---
+Name: Paolo Bertola
+Title: Director, VFX Designer, Film Editor, Concept Artist, Writer
+Profile: https://www.inventivemedia.com.ph/paolo-bertola/
+Skills: Adobe Premiere Pro, Adobe Photoshop, Adobe After Effects, Particle Illusion, 3DStudio Max, Poser Pro; Expertise in Direction, Screenplay, VFX Design, Video Editing, Video Compositing, 3D Animation, Fight Choreography
+Experience: Extensive filmography since 1994 with 25+ films (IMDB listed); VFX Supervisor for 60+ cinema/TV productions including Imagine You & Me, Princess in the Palace, Kidlat Serial TV (64 episodes), Arachnicide; Directed commercials for Ferrero, Salvatore Ferragamo, E.N.I., General Electric, Parmigiano Reggiano, GoldenLady
+
+--- INSTRUCTOR #28 ---
+Name: Muriel Orobia
+Title: Digital Marketing Manager
+Profile: https://www.inventivemedia.com.ph/muriel-l-orobia/
+Skills: SEM, Google AdWords, Google Search/Display/Mobile Advertising, Google Analytics, Adobe Photoshop, Adobe Illustrator, PPC, Social Media Marketing
+Experience: Digital Communications Officer at Wentworth Healthcare, Australia (Oct 2022–Present); Co-Founder at Sygnify (Jul 2020–Present); Head of Digital at Century Properties (Jun 2017–Mar 2018); Digital Marketing Manager at Columbus Capital (Jul 2014–Jun 2017); Senior Campaign Optimiser at Google ANZ/VXI Global Solutions (Jul 2012–Sep 2014)
+Education: Our Lady of Fatima University
+Certifications: Google AdWords Fundamentals, Google Search/Display/Mobile Advertising, Google Analytics, Adobe Photoshop, Adobe Illustrator, Facebook Blueprint
+
+--- INSTRUCTOR #29 ---
+Name: Roman Marcus Abad
+Title: Creative Director | Filmmaker
+Profile: https://www.inventivemedia.com.ph/roman-marcus-abad/
+Skills: Video Production, Media Production, Art Direction, Creative Direction, Digital Marketing, Storytelling, Digital Media, Advertising, Videography, Photography, Video Post-Production
+Experience: Creative Director at Penbrothers (Feb 2023–Present); Freelance Film & Creative Director (Jun 2012–Present); Creative Director at Grace School of Theology (Oct 2019–Jun 2022); Content & Video Production Manager at EcoRenew Group (Oct 2018–Aug 2019); Founder & Creative Director at Empyre Media (Mar 2017–Oct 2018)
+Education: Meridian International College — BA Film; San Beda College Alabang — BA Communications and Media Studies
+Awards: Grand Prize Winner, Vision Petron National Student Art Competition 2013 (first short film category)
+
+--- INSTRUCTOR #30 ---
+Name: Ruel G. Nopal
+Title: Web Development Specialist
+Profile: https://www.inventivemedia.com.ph/ruel-g-nopal/
+Skills: HTML, CSS, Bootstrap, XML, JavaScript, jQuery, PHP, Laravel, Ruby on Rails, Agile, MySQL, WordPress, Drupal, Joomla, Photoshop, SEO
+Experience: Head of Engineering and Security at Prosperna (Mar 2022–Present); Mentor/Advisor at Newchip Accelerator (Dec 2022–Present); DevSecOps Associate Manager at Accenture (Apr 2021–Mar 2022); Founder of RaketHostPH (Apr 2016–Jan 2020); Senior Full Stack Developer at Protos EzyVA (Apr 2013–Apr 2016)
+Education: Southern Leyte State University — BS Civil Engineering; Informatics — Web Development
+Awards: Featured in Coderstrust Magazine (Bangladesh), Radio Guest on DZME discussing freelancing
+
+--- INSTRUCTOR #31 ---
+Name: Carlo L. Pantilano
+Title: MCSA, MCSE, MCITP, MCTS
+Profile: https://www.inventivemedia.com.ph/carlo-l-pantilano/
+Skills: Networking (Wired and Wireless), Windows Server, Citrix, EMC, Cloud Computing, Structured Cabling, Firewall
+Experience: Technical Architect at SoftwareOne Inc. (Dec 2016–Present); Technical Consultant at Dimension Data Inc. (Sep 2013–Dec 2016); Solutions Consultant at Phil-Data Business Systems (Mar 2012–Aug 2013)
+Certifications: Citrix Certified Professional/Associate (Virtualization), EMC Information Storage Associate, MCSE (Private Cloud, Cloud Platform & Infrastructure, Productivity, Communication), MCSA (Windows Server 2012, Windows 7), MCITP (Virtualization Administrator, Enterprise Desktop Administrator), HTML5 with JavaScript and CSS3 Specialist
+
+--- INSTRUCTOR #32 ---
+Name: Kyeth Harryz C. Pallanan
+Title: MCT, MCTS, MCP, MCSA, CCNA
+Profile: https://www.inventivemedia.com.ph/kyeth-harryz-c-pallanan/
+Skills: Windows Server, Active Directory, Networking, Cisco Technologies, System Administration
+Experience: IT Technical Trainer and Systems Engineer with Microsoft and Cisco certifications
+Certifications: Microsoft Certified Trainer (MCT), MCTS, MCP, MCSA, Cisco CCNA
+
+--- INSTRUCTOR #33 ---
+Name: Harold B. Tomas
+Title: MCP, MCTS, MCITP, TESDA NC-II
+Profile: https://www.inventivemedia.com.ph/harold-b-tomas/
+Skills: Windows Server, Networking (Wired and Wireless), Firewall, Windows Operating Systems, PowerShell, Computer Hardware and Software, Structured Cabling
+Experience: IT Operation Team Lead at Volenday (Oct 2022–Present); IT Infrastructure Architect at Volenday (Oct 2018–Oct 2022); Senior Systems Administrator at ProV International (Apr 2012–Oct 2018); System Administrator at UST Global (Aug 2011–Apr 2012); IT R&D Systems Administrator at TELUS International Philippines (Apr 2010–Jul 2011)
+Education: Adamson University — BS Computer Engineering; Don Bosco Technical Institute, Tarlac
+Certifications: ITIL Foundation Level, MCP/MCTS/MCITP Enterprise Administrator (Windows Server 2003/2008, Windows 7), TESDA NC-II Computer Hardware Servicing
+Awards: Outstanding IT Specialist of the Year 2008 (ePLDT Ventus)
+
+--- INSTRUCTOR #34 ---
+Name: Sydel Palinlin
+Title: Web Development Specialist
+Profile: https://www.inventivemedia.com.ph/sydel-palinlin/
+Skills: HTML, CSS, JavaScript, PHP, Laravel, React, Vue, Angular, Node.js, Python, Ruby on Rails, MySQL, PostgreSQL, MongoDB, Git
+Experience: Web Developer and Software Engineer with extensive experience in full-stack web development across multiple frameworks and languages
+
+--- INSTRUCTOR #35 ---
+Name: Ritche Villarico
+Title: CoE, MCT, MCSA, MCP, MCITP, ITILv3
+Profile: https://www.inventivemedia.com.ph/ritche-m-villarico/
+Skills: Active Directory, Windows Server, DNS, System Administration, Network Administration, VPN, Firewalls, Cisco Technologies, TCP/IP, Network Security, Linux, Cloud Computing, Virtualization, ITIL, Telecommunications
+Experience: Assistant Manager IT / Shipboard IT Manager at Royal Caribbean Cruises Ltd. (Mar 2017–Present); ITIS Information Technology Infrastructure Specialist at Royal Caribbean (Nov 2013–Apr 2016); Senior Server Admin Wintel at Fidelity National Information Services (2011–2012); Lecturer at Far Eastern University (May 2012–Mar 2013)
+Education: Far Eastern University — Masters in Information Technology; Technological Institute of the Philippines — BS Computer Engineering
+Certifications: Microsoft Certified Trainer, MCP, Linux Professional Institute LPIC-1
+
+--- INSTRUCTOR #36 ---
+Name: Kirsten Nicole Mendoza
+Title: Multimedia & Design Specialist
+Profile: https://www.inventivemedia.com.ph/kirsten-nicole-mendoza/
+Skills: Adobe Illustrator, Adobe Photoshop, Google AdWords, Google Analytics, Search Engine Marketing
+Experience: Google Ads Strategist at Concentrix (May 2021–May 2022) — Paid Search, Display, Video Campaigns; Marketing Director at Anytime Fitness (Jun 2020–Sep 2020); Freelance Designer at Cinqo Media Inc. (Jan 2015–Mar 2020); Graphic and Product Designer at SMB Global HK Ltd in Hangzhou, China (Oct 2013–May 2014)
+Education: University of Santo Tomas — Advertising, Architecture & Fine Arts; First Academy of Computer Arts — Visual Graphic Design; Philippine Center for Creative Imaging — Web Design
+Certifications: Google Ads (Shopping, Display, Video, Search)
+Awards: Club Manager of the Year (Anytime Fitness Inspire Brands, Dec 2017)
+
+--- INSTRUCTOR #37 ---
+Name: John Vincent Paragna
+Title: MCP, MCTS, MCSA, MCITP, ITIL V3
+Profile: https://www.inventivemedia.com.ph/john-vincent-paragna/
+Skills: Cisco Networking, Windows Server, Windows Operating System, Technical Support, Hyper-V, Network Administration, VoIP, System Administration, Security, Telephony, Virtualization, Disaster Recovery, Firewalls, Data Privacy, ITIL Process
+Experience: Assistant Manager at Infosys BPM (Dec 2018–Present) — managing IT staffs, service design, capacity/security management; Technical Director at STRATOC Inc/Accedeo Inc (Mar 2016–Nov 2018); Senior Network Engineer at MiraMed (May 2013–Mar 2016); Regional IT Support Engineer at Asia Halcrow/Ch2mHill covering whole APAC (Jan 2010–Nov 2011)
+Education: AMA Computer University — BS Electronics and Communication Engineering; Zero To Mastery Academy — Ethical Hacking
+Certifications: Certified LEAN SIX SIGMA Yellow Belt, MCP/MCTS/MCSA/MCITP, ITIL V3, NSE 1/2/3 (Fortinet)
+
 === PAYMENT OPTIONS ===
 
 Accepted Payment Methods:
