@@ -45,12 +45,12 @@
     });
 
     /**
-     * Callback for the Gemini Chat REST API endpoint.
-     * Sanitizes input, checks for hardcoded responses, and fetches the Gemini API.
-     * 
-     * @param WP_REST_Request $request
-     * @return WP_REST_Response
-     */
+ * Callback for the Gemini Chat REST API endpoint.
+ * Sanitizes input, checks for hardcoded responses, and fetches the Gemini API.
+ *
+ * @param WP_REST_Request $request
+ * @return WP_REST_Response
+ */
     function handle_gemini_chat($request)
     {
     $user_message = sanitize_text_field($request->get_param('message'));
@@ -94,7 +94,7 @@
 
     // API Configuration
     $api_key = defined('GEMINI_API_KEY') ? GEMINI_API_KEY : '';
-    $model   = 'gemini-2.5-flash';
+    $model   = 'gemini-3.1-flash-lite-preview';
     $url     = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$api_key}";
 
     // Build system instruction from both knowledge sources
