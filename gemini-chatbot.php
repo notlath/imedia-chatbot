@@ -98,10 +98,17 @@
     $url     = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$api_key}";
 
     // Build system instruction from both knowledge sources
-    $static_kb  = gemini_get_static_knowledge();
-    $dynamic_kb = gemini_get_dynamic_knowledge();
+    $static_kb    = gemini_get_static_knowledge();
+    $dynamic_kb   = gemini_get_dynamic_knowledge();
+    $current_time = wp_date('l, F j, Y, h:i A');
+    $current_year = wp_date('Y');
+    $years_op     = intval($current_year) - 2006;
 
     $system_text = "You are the official AI assistant for Inventive Media (https://www.inventivemedia.com.ph/), a premier IT training center in Makati City, Philippines, operating since 2006.
+
+CURRENT CONTEXT:
+- Today's Date & Time: {$current_time}
+- Years in Operation: {$years_op} years (since 2006)
 
 ROLE & BEHAVIOR:
 - Answer questions about courses, schedules, pricing, promos, services, location, and contact information.
