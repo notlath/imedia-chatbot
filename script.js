@@ -1,7 +1,7 @@
 /**
  * Inventive Media AI Assistant - Frontend Logic
- * 
- * Handles chat window UI, message persistence via cookies, 
+ *
+ * Handles chat window UI, message persistence via cookies,
  * markdown rendering, and integration with the WordPress REST API.
  */
 (function () {
@@ -281,7 +281,7 @@ You can easily find us here:
 
   /**
    * Escapes HTML characters to prevent XSS.
-   * @param {string} text 
+   * @param {string} text
    * @returns {string} - Escaped string.
    */
   function escapeHtml(text) {
@@ -293,7 +293,7 @@ You can easily find us here:
   /**
    * Minimal Markdown-to-HTML parser for bot responses.
    * Handles Bold, Italic, Code, Links, Lists, and Headings.
-   * @param {string} text 
+   * @param {string} text
    * @returns {string} - Rendered HTML.
    */
   function renderMarkdown(text) {
@@ -314,7 +314,7 @@ You can easily find us here:
         }
         // Scrub unsafe links
         return `[${text}](${url})`;
-      }
+      },
     );
 
     // Process list items line by line

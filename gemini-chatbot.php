@@ -102,7 +102,7 @@
     $dynamic_kb   = gemini_get_dynamic_knowledge();
     $current_time = wp_date('l, F j, Y, h:i A');
     $current_year = wp_date('Y');
-    $years_op     = intval($current_year) - 2006;
+    // $years_op     = intval($current_year) - 2006;
 
     $system_text = "You are the official AI assistant for Inventive Media (https://www.inventivemedia.com.ph/), a premier IT training center in Makati City, Philippines, operating since 2006.
 

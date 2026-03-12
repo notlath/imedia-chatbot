@@ -129,7 +129,7 @@
   width: 380px;
   height: 580px;
   max-width: calc(100vw - 32px);
-  max-height: calc(100vh - 130px);
+  max-height: calc(100vh - 180px); /* 160px bottom offset + 20px top margin */
   border-radius: var(--gc-radius);
   box-shadow: var(--gc-shadow-lg);
   display: flex;
