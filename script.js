@@ -228,6 +228,7 @@ You can easily find us here:
         body: JSON.stringify({
           message: message,
           history: conversationHistory,
+          page_url: window.location.href,
         }),
       });
       const data = await response.json();

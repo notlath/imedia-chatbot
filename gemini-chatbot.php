@@ -56,6 +56,14 @@
     $user_message = sanitize_text_field($request->get_param('message'));
     $history      = $request->get_param('history') ?: [];
 
+    // Sanitize and validate the page URL sent from the browser
+    $raw_page_url = $request->get_param('page_url') ?? '';
+    $page_url     = sanitize_url($raw_page_url);
+    // Only accept http/https URLs to prevent injection of other schemes
+    if (! preg_match('/^https?:\/\//i', $page_url)) {
+        $page_url = '';
+    }
+
     // Check for online course queries - return hardcoded response to save API credits
     $online_patterns = [
         'online course',
@@ -104,11 +112,14 @@
     $current_year = wp_date('Y');
     // $years_op     = intval($current_year) - 2006;
 
+    $page_context = $page_url ? "- User's Current Page: {$page_url}" : '';
+
     $system_text = "You are the official AI assistant for Inventive Media (https://www.inventivemedia.com.ph/), a premier IT training center in Makati City, Philippines, operating since 2006.
 
 CURRENT CONTEXT:
 - Today's Date & Time: {$current_time}
 - Years in Operation: {$years_op} years (since 2006)
+{$page_context}
 
 ROLE & BEHAVIOR:
 - Answer questions about courses, schedules, pricing, promos, services, location, and contact information.
