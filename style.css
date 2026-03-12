@@ -47,7 +47,7 @@
     var(--gc-gradient-angle),
     var(--gc-btn-accent),
     #e7005e
-  );
+  ) !important;
   color: var(--gc-text-light);
   box-shadow: 0 4px 16px rgba(3, 35, 64, 0.35);
   cursor: pointer;
