@@ -42,9 +42,7 @@ ACCREDITATIONS & PARTNERS:
 
 FOUNDER: Henry N. Ong II — Pioneer of CMS web development courses in the Philippines
 
-RATINGS: 4.8/5 on Facebook Reviews · 4.9/5 on Google Reviews
-
-=== COURSE CATEGORIES & COURSES ===
+RATINGS: 4.8/5 on Facebook Reviews · 4.9/5 on Google Re=== COURSE CATEGORIES & COURSES ===
 
 All courses include: Face-to-Face instruction, Hands-on training, Globally Recognized Course Certificate, and Unlimited Free Class Retakes (valid 1 year).
 
@@ -74,7 +72,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
    STATUS: Currently on hold. Not available for enrollment at this time.
 
 --- WEB DEVELOPMENT (Front-End) ---
-8. HTML5, CSS3 & Tailwind | 3 Days | 9am–7pm
+8. HTML5, CSS3 & BootStrap | 3 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/
 
 9. JavaScript Essentials | 3 Days | 9am–7pm
@@ -104,7 +102,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 16. WordPress CMS | 3 Days | 9am–7pm
     URL: https://www.inventivemedia.com.ph/wordpress-tutorial-training-philippines/
 
-17. WordPress Custom Theme with Elementor | 2 Days
+17. Mastering WordPress with Elementor | 2 Days
     URL: https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/
 
 18. Joomla CMS | 2 Days
@@ -128,17 +126,17 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 
 --- DIGITAL MARKETING ---
 24. Digital Marketing Fundamentals | 2 Days (Online | Virtual Setup)
-    URL: https://www.inventivemedia.com.ph/digital-marketing-philippines-course/
+    URL: https://www.inventivemedia.com.ph/digital-marketing-training-course-philippines/
     SETUP: This course is conducted in an Online | Virtual setup.
 
 25. Search Engine Optimization (SEO) | 3 Days
-    URL: https://www.inventivemedia.com.ph/seo-training-philippines-search-engine-optimization/
+    URL: https://www.inventivemedia.com.ph/seo-training-philippines/
 
 26. Social Media Marketing (SMM) | 3 Days
     URL: https://www.inventivemedia.com.ph/social-media-marketing-training-philippines/
 
 27. Google Ads (PPC) Certification | 3 Days
-    URL: https://www.inventivemedia.com.ph/sem-training-philippines-search-engine-marketing/
+    URL: https://www.inventivemedia.com.ph/digital-marketing-training-philippines-google-ads-ppc/
 
 --- NETWORK & SECURITY ---
 28. Basic Networking: Wired & Wireless | 2 Days
@@ -228,7 +226,7 @@ Requirements:
 - Outside Metro Manila: client covers transportation, board & lodging for trainer
 
 Corporate Rates (per person):
-- HTML5, CSS3 with Bootstrap 5: 3 Days / 30 Hours / ₱17,500
+- HTML, CSS & Tailwind: 3 Days / 30 Hours / ₱17,500
 - JavaScript Essentials: 3 Days / 30 Hours / ₱17,500
 - ReactJS Essentials: 3 Days / 30 Hours / ₱19,000
 - PHP with MySQL: 4 Days / 40 Hours / ₱19,000
@@ -300,12 +298,6 @@ NOTE: This is one of the most frequently asked questions. Inventive Media is an 
     - User asks for general INFO, DETAILS, OVERVIEW, OUTLINE → link to the Details section ([course-url]#details)
       Example: "Tell me more about Python" → [Python — View Details](https://www.inventivemedia.com.ph/python-software-training-philippines/#details)
 
-￼
-Sheets
-￼
-￼
-￼
-
     Do NOT just give the base URL when a more specific section link applies.
     Do NOT display or guess the exact peso price — always direct users to the **Fees** section of the course page.
 
@@ -314,14 +306,15 @@ PER-COURSE SECTION LINKS:
 
 --- GRAPHICS & 3D ---
 Adobe Photoshop:  #details https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#details | #fees https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#fees | #schedule https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#schedule | #register https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#register
+Adobe Lightroom:  #details https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#details | #fees https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#register
 Adobe Illustrator: #details https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#details | #fees https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#fees | #schedule https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#schedule | #register https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#register
 Adobe InDesign:   #details https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#details | #fees https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#register
-CorelDraw:        #details https://www.inventivemedia.com.ph/corel-draw-x7/#details | #fees https://www.inventivemedia.com.ph/corel-draw-x7/#fees | #schedule https://www.inventivemedia.com.ph/corel-draw-x7/#schedule | #register https://www.inventivemedia.com.ph/corel-draw-x7/#register
+CorelDRAW:        #details https://www.inventivemedia.com.ph/corel-draw-x7/#details | #fees https://www.inventivemedia.com.ph/corel-draw-x7/#fees | #schedule https://www.inventivemedia.com.ph/corel-draw-x7/#schedule | #register https://www.inventivemedia.com.ph/corel-draw-x7/#register
 Adobe Animate:    #details https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#details | #fees https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#fees | #schedule https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#schedule | #register https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#register
 Autodesk 3DS Max: ⏸️ ON HOLD - Currently unavailable for enrollment.
 
 --- WEB DEVELOPMENT ---
-HTML5 CSS3 Tailwind: #fees https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/#register
+HTML, CSS & Tailwind: #fees https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/#register
 JavaScript:       #fees https://www.inventivemedia.com.ph/javascript-jquery-training-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/javascript-jquery-training-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/javascript-jquery-training-course-philippines/#register
 React JS:         #fees https://www.inventivemedia.com.ph/react-js-tutorial-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/react-js-tutorial-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/react-js-tutorial-training-philippines/#register
 jQuery:           #fees https://www.inventivemedia.com.ph/jquery-tutorial-javascript-training-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/jquery-tutorial-javascript-training-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/jquery-tutorial-javascript-training-course-philippines/#register
@@ -329,7 +322,7 @@ PHP with MySQL:   #fees https://www.inventivemedia.com.ph/php-tutorial-mysql-tra
 Laravel:          #fees https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#fees | #schedule https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#schedule | #register https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#register
 CodeIgniter:      #fees https://www.inventivemedia.com.ph/codeigniter-training-course-philippines-php-framework/#fees | #schedule https://www.inventivemedia.com.ph/codeigniter-training-course-philippines-php-framework/#schedule | #register https://www.inventivemedia.com.ph/codeigniter-training-course-philippines-php-framework/#register
 WordPress CMS:    #fees https://www.inventivemedia.com.ph/wordpress-tutorial-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/wordpress-tutorial-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/wordpress-tutorial-training-philippines/#register
-WordPress Elementor: #fees https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/#register
+WordPress Custom Theme with Elementor: #fees https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/wordpress-elementor-training-philippines/#register
 Joomla:           #fees https://www.inventivemedia.com.ph/joomla-tutorial-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/joomla-tutorial-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/joomla-tutorial-training-philippines/#register
 Drupal:           #fees https://www.inventivemedia.com.ph/drupal-tutorial-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/drupal-tutorial-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/drupal-tutorial-training-philippines/#register
 
@@ -340,10 +333,10 @@ DaVinci Resolve:  #fees https://www.inventivemedia.com.ph/davinci-resolve-traini
 Indie Film Making: #fees https://www.inventivemedia.com.ph/indie-film-making/#fees | #schedule https://www.inventivemedia.com.ph/indie-film-making/#schedule | #register https://www.inventivemedia.com.ph/indie-film-making/#register
 
 --- DIGITAL MARKETING ---
-Digital Marketing Fundamentals: #fees https://www.inventivemedia.com.ph/digital-marketing-philippines-course/#fees | #schedule https://www.inventivemedia.com.ph/digital-marketing-philippines-course/#schedule | #register https://www.inventivemedia.com.ph/digital-marketing-philippines-course/#register
-SEO:              #fees https://www.inventivemedia.com.ph/seo-training-philippines-search-engine-optimization/#fees | #schedule https://www.inventivemedia.com.ph/seo-training-philippines-search-engine-optimization/#schedule | #register https://www.inventivemedia.com.ph/seo-training-philippines-search-engine-optimization/#register
+Digital Marketing Fundamentals: #fees https://www.inventivemedia.com.ph/digital-marketing-training-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/digital-marketing-training-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/digital-marketing-training-course-philippines/#register
+SEO:              #fees https://www.inventivemedia.com.ph/seo-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/seo-training-philippines-search-engine-optimization/#schedule | #register https://www.inventivemedia.com.ph/seo-training-philippines-search-engine-optimization/#register
 Social Media Marketing: #fees https://www.inventivemedia.com.ph/social-media-marketing-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/social-media-marketing-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/social-media-marketing-training-philippines/#register
-Google Ads:       #fees https://www.inventivemedia.com.ph/sem-training-philippines-search-engine-marketing/#fees | #schedule https://www.inventivemedia.com.ph/sem-training-philippines-search-engine-marketing/#schedule | #register https://www.inventivemedia.com.ph/sem-training-philippines-search-engine-marketing/#register
+Google Ads:       #fees https://www.inventivemedia.com.ph/digital-marketing-training-philippines-google-ads-ppc/#fees | #schedule https://www.inventivemedia.com.ph/digital-marketing-training-philippines-google-ads-ppc/#schedule | #register https://www.inventivemedia.com.ph/digital-marketing-training-philippines-google-ads-ppc/#register
 
 --- NETWORK & SECURITY ---
 Basic Networking: #fees https://www.inventivemedia.com.ph/networking-training-courses-philippines/#fees | #schedule https://www.inventivemedia.com.ph/networking-training-courses-philippines/#schedule | #register https://www.inventivemedia.com.ph/networking-training-courses-philippines/#register
@@ -365,6 +358,50 @@ AWS Solutions Architect: #fees https://www.inventivemedia.com.ph/aws-system-arch
 Microsoft Azure Fundamentals: #fees https://www.inventivemedia.com.ph/microsoft-azure-fundamentals-certification-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/microsoft-azure-fundamentals-certification-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/microsoft-azure-fundamentals-certification-training-philippines/#register
 Microsoft Azure Administrator: #fees https://www.inventivemedia.com.ph/microsoft-azure-administrator-certification-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/microsoft-azure-administrator-certification-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/microsoft-azure-administrator-certification-training-philippines/#register
 ITIL v4 Foundation: #fees https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/#fees | #schedule https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/#schedule | #register https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/#register
+
+=== PAYMENT OPTIONS ===
+
+Accepted Payment Methods:
+- Cash
+- Bank Cheque (Note: Payment should clear before the training date)
+- Bank/Online Transfer
+- Globe GCash
+- Credit Card (Temporarily Not Available)
+
+Payment Arrangement for Physical/Face-to-Face Classes:
+- Once the training has been confirmed to push through, a 50% payment is required for the class. The balance can be settled during the first day of the class.
+
+Payment Arrangement for Virtual/Online Classes:
+- Joining any Live Online Training will require full payment. Payment shall only be requested once the class is confirmed to push through.
+
+=== TRAINING PROPOSAL REQUEST ===
+
+To proceed with a training proposal, the following details are required:
+1. Company Name
+2. Company Address
+3. Name of Addressee
+4. Training Course and Preferred Schedule
+5. Email Address for Correspondence
+
+E-mail the details to: info@inventivemedia.com.ph
+
+Once the above information is received, the official training proposal will be promptly prepared and sent.
+
+=== CLASS CONFIRMATION & PAYMENT POLICY ===
+
+Minimum Participation:
+- The center requires a minimum of five to six (5–6) confirmed participants for a public class to proceed.
+- Once this number is reached, participants will be contacted via email or SMS to re-verify their reservation.
+
+Mandatory Reply Policy:
+- Upon receiving the confirmation message, participants must respond via email or SMS to acknowledge their status.
+- IMPORTANT: This step is essential to distinguish legitimate applicants from the high volume of daily spam registrations (approx. 40%). Failure to acknowledge a reservation may result in the contact information being restricted from future registrations in the system.
+
+Payment Terms:
+- Payment details will be shared only after the class is officially confirmed.
+- Initial Payment: A 50% downpayment is required once the training is confirmed.
+- Remaining Balance: The final 50% may be settled on the first day of the class.
+
 KB;
 }
 
