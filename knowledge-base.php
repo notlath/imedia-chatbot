@@ -59,10 +59,10 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
    URL: https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/
 
 4. Adobe InDesign CC 2026 — Essentials to Advanced | 2 Days | 9am–7pm
-   URL: https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/
+   URL: https://www.inventivemedia.com.ph/adobe-indesign-training-tutorial-philippines/
 
-5. CorelDraw 2025 — Essentials to Advanced | 3 Days | 9am–7pm
-   URL: https://www.inventivemedia.com.ph/corel-draw-x7/
+5. CorelDRAW 2025 — Essentials to Advanced | 3 Days | 9am–7pm
+   URL: https://www.inventivemedia.com.ph/corel-draw-training-philippines-graphic-design-course/
 
 6. Adobe Animate CC | 2 Days
    URL: https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/
@@ -72,7 +72,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
    STATUS: Currently on hold. Not available for enrollment at this time.
 
 --- WEB DEVELOPMENT (Front-End) ---
-8. HTML5, CSS3 & BootStrap | 3 Days | 9am–7pm
+8. HTML, CSS & Tailwind | 3 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/
 
 9. JavaScript Essentials | 3 Days | 9am–7pm
@@ -116,7 +116,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
     URL: https://www.inventivemedia.com.ph/adobe-premiere-pro-video-editing-training-film-courses-philippines/
 
 21. Adobe After Effects CC 2026 — Essentials to Advanced | 3 Days | 9am–7pm
-    URL: https://www.inventivemedia.com.ph/adobe-after-effects-video-editing-training-film-courses-philippines/
+    URL: https://www.inventivemedia.com.ph/adobe-after-effects-training-philippines-video-editing-film-making-course/
 
 22. DaVinci Resolve 18 — Video & Film Editing | 3 Days | 9am–7pm
     URL: https://www.inventivemedia.com.ph/davinci-resolve-training-philippines-video-film-course/
@@ -150,7 +150,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
     URL: https://www.inventivemedia.com.ph/fire-detection-alarm-system-training-philippines/
 
 31. Fiber Optics Installer / Technician | 3 Days
-    URL: https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines/
+    URL: https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines-foa/
 
 32. Windows Server 2022: Administration | 2 Days
     URL: https://www.inventivemedia.com.ph/microsoft-windows-server-2022-training-philippines-administration/
@@ -160,7 +160,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 
 --- SOFTWARE PROGRAMMING ---
 34. Python Programming Essentials | 4 Days | 9am–7pm
-    URL: https://www.inventivemedia.com.ph/python-software-training-philippines/
+    URL: https://www.inventivemedia.com.ph/python-programming-language-training-course-philippines/
 
 35. Django Python Framework | 4 Days
     URL: https://www.inventivemedia.com.ph/django-python-framework-training-philippines/
@@ -308,8 +308,8 @@ PER-COURSE SECTION LINKS:
 Adobe Photoshop:  #details https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#details | #fees https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#fees | #schedule https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#schedule | #register https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#register
 Adobe Lightroom:  #details https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#details | #fees https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/#register
 Adobe Illustrator: #details https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#details | #fees https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#fees | #schedule https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#schedule | #register https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/#register
-Adobe InDesign:   #details https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#details | #fees https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-indesign-cc-training-tutorial-philippines/#register
-CorelDRAW:        #details https://www.inventivemedia.com.ph/corel-draw-x7/#details | #fees https://www.inventivemedia.com.ph/corel-draw-x7/#fees | #schedule https://www.inventivemedia.com.ph/corel-draw-x7/#schedule | #register https://www.inventivemedia.com.ph/corel-draw-x7/#register
+Adobe InDesign:   #details https://www.inventivemedia.com.ph/adobe-indesign-training-tutorial-philippines/#details | #fees https://www.inventivemedia.com.ph/adobe-indesign-training-tutorial-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-indesign-training-tutorial-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-indesign-training-tutorial-philippines/#register
+CorelDRAW:        #details https://www.inventivemedia.com.ph/corel-draw-training-philippines-graphic-design-course/#details | #fees https://www.inventivemedia.com.ph/corel-draw-training-philippines-graphic-design-course/#fees | #schedule https://www.inventivemedia.com.ph/corel-draw-training-philippines-graphic-design-course/#schedule | #register https://www.inventivemedia.com.ph/corel-draw-training-philippines-graphic-design-course/#register
 Adobe Animate:    #details https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#details | #fees https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#fees | #schedule https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#schedule | #register https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/#register
 Autodesk 3DS Max: ⏸️ ON HOLD - Currently unavailable for enrollment.
 
@@ -328,7 +328,7 @@ Drupal:           #fees https://www.inventivemedia.com.ph/drupal-tutorial-traini
 
 --- VIDEO & FILM ---
 Adobe Premiere Pro: #fees https://www.inventivemedia.com.ph/adobe-premiere-pro-video-editing-training-film-courses-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-premiere-pro-video-editing-training-film-courses-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-premiere-pro-video-editing-training-film-courses-philippines/#register
-Adobe After Effects: #fees https://www.inventivemedia.com.ph/adobe-after-effects-video-editing-training-film-courses-philippines/#fees | #schedule https://www.inventivemedia.com.ph/adobe-after-effects-video-editing-training-film-courses-philippines/#schedule | #register https://www.inventivemedia.com.ph/adobe-after-effects-video-editing-training-film-courses-philippines/#register
+Adobe After Effects: #fees https://www.inventivemedia.com.ph/adobe-after-effects-training-philippines-video-editing-film-making-course/#fees | #schedule https://www.inventivemedia.com.ph/adobe-after-effects-training-philippines-video-editing-film-making-course/#schedule | #register https://www.inventivemedia.com.ph/adobe-after-effects-training-philippines-video-editing-film-making-course/#register
 DaVinci Resolve:  #fees https://www.inventivemedia.com.ph/davinci-resolve-training-philippines-video-film-course/#fees | #schedule https://www.inventivemedia.com.ph/davinci-resolve-training-philippines-video-film-course/#schedule | #register https://www.inventivemedia.com.ph/davinci-resolve-training-philippines-video-film-course/#register
 Indie Film Making: #fees https://www.inventivemedia.com.ph/indie-film-making/#fees | #schedule https://www.inventivemedia.com.ph/indie-film-making/#schedule | #register https://www.inventivemedia.com.ph/indie-film-making/#register
 
@@ -342,12 +342,12 @@ Google Ads:       #fees https://www.inventivemedia.com.ph/digital-marketing-trai
 Basic Networking: #fees https://www.inventivemedia.com.ph/networking-training-courses-philippines/#fees | #schedule https://www.inventivemedia.com.ph/networking-training-courses-philippines/#schedule | #register https://www.inventivemedia.com.ph/networking-training-courses-philippines/#register
 CCTV:             #fees https://www.inventivemedia.com.ph/cctv-training-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/cctv-training-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/cctv-training-course-philippines/#register
 FDAS:             #fees https://www.inventivemedia.com.ph/fire-detection-alarm-system-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/fire-detection-alarm-system-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/fire-detection-alarm-system-training-philippines/#register
-Fiber Optics:     #fees https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines/#register
+Fiber Optics:     #fees https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines-foa/#fees | #schedule https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines-foa/#schedule | #register https://www.inventivemedia.com.ph/fiber-optic-technician-training-philippines-foa/#register
 Windows Server Administration: #fees https://www.inventivemedia.com.ph/microsoft-windows-server-2022-training-philippines-administration/#fees | #schedule https://www.inventivemedia.com.ph/microsoft-windows-server-2022-training-philippines-administration/#schedule | #register https://www.inventivemedia.com.ph/microsoft-windows-server-2022-training-philippines-administration/#register
 Windows Server Active Directory: #fees https://www.inventivemedia.com.ph/windows-server-2022-training-active-directory/#fees | #schedule https://www.inventivemedia.com.ph/windows-server-2022-training-active-directory/#schedule | #register https://www.inventivemedia.com.ph/windows-server-2022-training-active-directory/#register
 
 --- SOFTWARE PROGRAMMING ---
-Python:           #fees https://www.inventivemedia.com.ph/python-software-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/python-software-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/python-software-training-philippines/#register
+Python:           #fees https://www.inventivemedia.com.ph/python-programming-language-training-course-philippines/#fees | #schedule https://www.inventivemedia.com.ph/python-programming-language-training-course-philippines/#schedule | #register https://www.inventivemedia.com.ph/python-programming-language-training-course-philippines/#register
 Django:           #fees https://www.inventivemedia.com.ph/django-python-framework-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/django-python-framework-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/django-python-framework-training-philippines/#register
 Python Data Science: #fees https://www.inventivemedia.com.ph/python-data-science-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/python-data-science-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/python-data-science-training-philippines/#register
 Java:             #fees https://www.inventivemedia.com.ph/java-programming-software-training-philippines/#fees | #schedule https://www.inventivemedia.com.ph/java-programming-software-training-philippines/#schedule | #register https://www.inventivemedia.com.ph/java-programming-software-training-philippines/#register
