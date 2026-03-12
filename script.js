@@ -249,7 +249,7 @@ You can easily find us here:
       saveChatHistory();
     } catch (error) {
       hideTyping();
-      appendMessage("Connection error. Please try again.", "bot");
+      appendMessage("We're currently experiencing high traffic. For urgent concerns, please reach out to us directly at **+63 936 9700874** / **+63 933 1348856** or email **inventivemedia.ph@gmail.com**.", "bot");
     } finally {
       // Re-enable input after 3-second cooldown
       setTimeout(function () {

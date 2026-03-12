@@ -209,7 +209,7 @@ ROLE & BEHAVIOR:
     ]);
 
     if (is_wp_error($response)) {
-        return new WP_REST_Response(['reply' => 'Sorry, I encountered a connection error. Please try again.'], 500);
+        return new WP_REST_Response(['reply' => "We're currently experiencing high traffic. For urgent concerns, please reach out to us directly at **+63 936 9700874** / **+63 933 1348856** or email **inventivemedia.ph@gmail.com**."], 500);
     }
 
     $raw_body  = wp_remote_retrieve_body($response);
