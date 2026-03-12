@@ -61,13 +61,15 @@
         return new WP_REST_Response(['reply' => $safety_reply], 200);
     }
 
-    $history      = $request->get_param('history') ?: [];
+    $history = $request->get_param('history') ?: [];
 
     // Sanitize and validate the page URL sent from the browser
     $raw_page_url = $request->get_param('page_url') ?? '';
     $page_url     = sanitize_url($raw_page_url);
-    // Only accept http/https URLs to prevent injection of other schemes
-    if (! preg_match('/^https?:\/\//i', $page_url)) {
+    $site_domain  = home_url();
+
+    // Only accept http/https URLs and verify it's our own domain to prevent spoofing
+    if (! preg_match('/^https?:\/\//i', $page_url) || strpos($page_url, $site_domain) !== 0) {
         $page_url = '';
     }
 
@@ -209,7 +211,7 @@ ROLE & BEHAVIOR:
     ]);
 
     if (is_wp_error($response)) {
-        return new WP_REST_Response(['reply' => "We're currently experiencing high traffic. For urgent concerns, please reach out to us directly at **+63 936 9700874** / **+63 933 1348856** or email **inventivemedia.ph@gmail.com**."], 500);
+        return new WP_REST_Response(['reply' => 'Sorry, I encountered a connection error. Please try again.'], 500);
     }
 
     $raw_body  = wp_remote_retrieve_body($response);

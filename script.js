@@ -193,8 +193,8 @@ You can easily find us here:
       appendMessage(reply, "bot");
 
       // Track history even for hardcoded
-      conversationHistory.push({ role: "user", text: message });
-      conversationHistory.push({ role: "bot", text: reply });
+      conversationHistory.push({role: "user", text: message});
+      conversationHistory.push({role: "bot", text: reply});
       if (conversationHistory.length > 12) {
         conversationHistory = conversationHistory.slice(-12);
       }
@@ -228,7 +228,8 @@ You can easily find us here:
         body: JSON.stringify({
           message: message,
           history: conversationHistory,
-          page_url: window.location.href,
+          // Mitigate URL noise/leaks by sending only origin and pathname
+          page_url: window.location.origin + window.location.pathname,
         }),
       });
       const data = await response.json();
@@ -239,8 +240,8 @@ You can easily find us here:
       appendMessage(reply, "bot");
 
       // Track conversation history for multi-turn context
-      conversationHistory.push({ role: "user", text: message });
-      conversationHistory.push({ role: "bot", text: reply });
+      conversationHistory.push({role: "user", text: message});
+      conversationHistory.push({role: "bot", text: reply});
 
       // Keep last 12 turns to stay within token limits
       if (conversationHistory.length > 12) {
@@ -249,7 +250,10 @@ You can easily find us here:
       saveChatHistory();
     } catch (error) {
       hideTyping();
-      appendMessage("We're currently experiencing high traffic. For urgent concerns, please reach out to us directly at **+63 936 9700874** / **+63 933 1348856** or email **inventivemedia.ph@gmail.com**.", "bot");
+      appendMessage(
+        "We're currently experiencing high traffic. For urgent concerns, please reach out to us directly at **+63 936 9700874** / **+63 933 1348856** or email **inventivemedia.ph@gmail.com**.",
+        "bot",
+      );
     } finally {
       // Re-enable input after 3-second cooldown
       setTimeout(function () {
@@ -409,7 +413,7 @@ You can easily find us here:
           tab.click();
           // Scroll the tab into view smoothly
           setTimeout(function () {
-            tab.scrollIntoView({ behavior: "smooth", block: "start" });
+            tab.scrollIntoView({behavior: "smooth", block: "start"});
           }, 150);
           return;
         }
@@ -419,7 +423,7 @@ You can easily find us here:
       const fallback = document.querySelector(`[href="#${hash}"]`);
       if (fallback) {
         fallback.click();
-        fallback.scrollIntoView({ behavior: "smooth", block: "start" });
+        fallback.scrollIntoView({behavior: "smooth", block: "start"});
       }
     }, 800); // 800 ms gives Elementor time to boot
   }
