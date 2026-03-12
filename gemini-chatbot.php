@@ -13,6 +13,7 @@
     require_once plugin_dir_path(__FILE__) . 'knowledge-base.php';
 
     // 1. Enqueue CSS and JS
+    // Hooks into WordPress script enqueue system to load chatbot assets
     add_action('wp_enqueue_scripts', function () {
     // Force a version number (time()) to bypass browser caching during testing
     wp_enqueue_style('gemini-chat-style', plugin_dir_url(__FILE__) . 'style.css', [], time());
@@ -27,6 +28,7 @@
 
     wp_localize_script('gemini-chat-script', 'chatConfig', [
         'apiUrl' => rest_url('gemini-chat/v1/send'),
+        'nonce'  => wp_create_nonce('wp_rest'),
     ]);
     });
 
@@ -35,10 +37,20 @@
     register_rest_route('gemini-chat/v1', '/send', [
         'methods'             => 'POST',
         'callback'            => 'handle_gemini_chat',
-        'permission_callback' => '__return_true',
+        'permission_callback' => function ($request) {
+            $nonce = $request->get_header('X-WP-Nonce');
+            return wp_verify_nonce($nonce, 'wp_rest');
+        },
     ]);
     });
 
+    /**
+     * Callback for the Gemini Chat REST API endpoint.
+     * Sanitizes input, checks for hardcoded responses, and fetches the Gemini API.
+     * 
+     * @param WP_REST_Request $request
+     * @return WP_REST_Response
+     */
     function handle_gemini_chat($request)
     {
     $user_message = sanitize_text_field($request->get_param('message'));
@@ -83,7 +95,7 @@
     // API Configuration
     $api_key = defined('GEMINI_API_KEY') ? GEMINI_API_KEY : '';
     $model   = 'gemini-2.5-flash';
-    $url   = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$api_key}";
+    $url     = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$api_key}";
 
     // Build system instruction from both knowledge sources
     $static_kb  = gemini_get_static_knowledge();
@@ -114,7 +126,7 @@ ROLE & BEHAVIOR:
 === DYNAMIC WEBSITE CONTENT ===
 {$dynamic_kb}";
 
-    // Build multi-turn conversation for Gemini
+    // 12. Build multi-turn conversation for Gemini API format (role: user/model)
     $contents = [];
     if (is_array($history)) {
         // Limit to last 6 turns (3 exchanges) to reduce token usage
@@ -209,11 +221,11 @@ ROLE & BEHAVIOR:
     // Get user IP address
     $user_ip = '';
     if (! empty($_SERVER['HTTP_CLIENT_IP'])) {
-        $user_ip = $_SERVER['HTTP_CLIENT_IP'];
+        $user_ip = sanitize_text_field($_SERVER['HTTP_CLIENT_IP']);
     } elseif (! empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        $user_ip = sanitize_text_field($_SERVER['HTTP_X_FORWARDED_FOR']);
     } else {
-        $user_ip = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+        $user_ip = isset($_SERVER['REMOTE_ADDR']) ? sanitize_text_field($_SERVER['REMOTE_ADDR']) : 'Unknown';
     }
 
     // Prepare data for Google Sheets
@@ -238,16 +250,18 @@ ROLE & BEHAVIOR:
     });
 
     // 4. The Shortcode: [gemini_chat]
+    // Renders the chatbot UI elements on the frontend
     add_shortcode('gemini_chat', function () {
     ob_start(); ?>
 
+    <div id="gc-chatbot-root">
     <div class="gc-chatbot-window" id="chatWindow" role="dialog" aria-hidden="true">
       <div class="gc-chat-header">
         <div class="gc-chat-header-avatar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8V4H8" /><rect x="4" y="8" width="16" height="12" rx="2" /><circle cx="9" cy="13" r="1" /><circle cx="15" cy="13" r="1" /></svg>
           <span class="gc-status-dot"></span>
         </div>
-        <div class="gc-chat-header-info">
+        <div class="gc-chat-header-info elementor-heading-title">
           <h2>Inventive Media</h2>
           <span>Online</span>
         </div>
@@ -277,6 +291,7 @@ ROLE & BEHAVIOR:
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
       <span class="gc-toggle-label">Chat Now</span>
     </button>
+    </div>
     <?php
     return ob_get_clean();
     });

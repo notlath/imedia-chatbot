@@ -1,8 +1,85 @@
+/**
+ * Inventive Media AI Assistant - Frontend Logic
+ * 
+ * Handles chat window UI, message persistence via cookies, 
+ * markdown rendering, and integration with the WordPress REST API.
+ */
 (function () {
   console.log("Inventive Media AI assistant initialized");
 
   // Conversation history for multi-turn context
   let conversationHistory = [];
+
+  // ── Cookie helpers for chat history persistence ──────────────────────────────
+  /**
+   * Sets a chat history cookie.
+   * @param {string} value - JSON stringified conversation history.
+   * @param {number} days - Expiration in days (defaults to 30 within the function).
+   */
+  function setChatCookie(value, days) {
+    const expires = new Date(Date.now() + 30 * 864e5).toUTCString();
+    const secure = location.protocol === "https:" ? "; Secure" : "";
+    document.cookie =
+      "gc_chat_history=" +
+      encodeURIComponent(value) +
+      "; expires=" +
+      expires +
+      "; path=/; SameSite=Lax" +
+      secure;
+  }
+
+  /**
+   * Retrieves the chat history cookie.
+   * @returns {string|null} - The decoded cookie value or null if not found.
+   */
+  function getChatCookie() {
+    const match = document.cookie.match(/(?:^|; )gc_chat_history=([^;]*)/);
+    return match ? decodeURIComponent(match[1]) : null;
+  }
+
+  /**
+   * Saves the current conversation history to a cookie.
+   * Limited to the last 6 turns to keep cookie size within 4KB limits.
+   */
+  function saveChatHistory() {
+    // Store only last 6 turns to stay within cookie size limits (~4 KB)
+    const toStore = conversationHistory.slice(-6);
+    try {
+      setChatCookie(JSON.stringify(toStore), 7);
+    } catch (e) {
+      // Ignore storage errors silently
+    }
+  }
+
+  /**
+   * Loads chat history from the cookie and reconstructs the chat messages.
+   */
+  function loadChatHistory() {
+    const stored = getChatCookie();
+    if (!stored) return;
+    try {
+      const history = JSON.parse(stored);
+      if (!Array.isArray(history) || history.length === 0) return;
+      conversationHistory = history;
+
+      // Hide quick replies and system message since prior history exists
+      const qr = document.getElementById("chatQuickReplies");
+      if (qr) qr.style.display = "none";
+      const sysMsg = document.getElementById("chatSystemMsg");
+      if (sysMsg) sysMsg.style.display = "none";
+
+      // Re-render each turn into the chat window
+      for (const turn of history) {
+        if (turn.role && turn.text) {
+          appendMessage(turn.text, turn.role === "user" ? "user" : "bot");
+        }
+      }
+    } catch (e) {
+      // Clear corrupt cookie data
+      setChatCookie("", -1);
+    }
+  }
+  // ─────────────────────────────────────────────────────────────────────────────
 
   // Flag to indicate if we're dragging quick replies (prevent click activation)
   let isDraggingQuickReplies = false;
@@ -89,6 +166,10 @@ You can easily find us here:
 📍 [View on Google Maps](https://maps.app.goo.gl/cKHeUGygaVkKHRCMA)`,
   };
 
+  /**
+   * Handles user input submission, including hardcoded response checks
+   * and Gemini API requests.
+   */
   async function handleSendMessage() {
     if (isSending) return; // Block while waiting for response
     const input = document.getElementById("chatInput");
@@ -112,11 +193,12 @@ You can easily find us here:
       appendMessage(reply, "bot");
 
       // Track history even for hardcoded
-      conversationHistory.push({role: "user", text: message});
-      conversationHistory.push({role: "bot", text: reply});
+      conversationHistory.push({ role: "user", text: message });
+      conversationHistory.push({ role: "bot", text: reply });
       if (conversationHistory.length > 12) {
         conversationHistory = conversationHistory.slice(-12);
       }
+      saveChatHistory();
       return;
     }
 
@@ -139,7 +221,10 @@ You can easily find us here:
     try {
       const response = await fetch(chatConfig.apiUrl, {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "X-WP-Nonce": chatConfig.nonce,
+        },
         body: JSON.stringify({
           message: message,
           history: conversationHistory,
@@ -153,13 +238,14 @@ You can easily find us here:
       appendMessage(reply, "bot");
 
       // Track conversation history for multi-turn context
-      conversationHistory.push({role: "user", text: message});
-      conversationHistory.push({role: "bot", text: reply});
+      conversationHistory.push({ role: "user", text: message });
+      conversationHistory.push({ role: "bot", text: reply });
 
       // Keep last 12 turns to stay within token limits
       if (conversationHistory.length > 12) {
         conversationHistory = conversationHistory.slice(-12);
       }
+      saveChatHistory();
     } catch (error) {
       hideTyping();
       appendMessage("Connection error. Please try again.", "bot");
@@ -174,6 +260,11 @@ You can easily find us here:
     }
   }
 
+  /**
+   * Appends a message bubble to the chat window.
+   * @param {string} text - The message content.
+   * @param {string} sender - 'user' or 'bot'.
+   */
   function appendMessage(text, sender) {
     const messages = document.getElementById("chatMessages");
     const div = document.createElement("div");
@@ -188,12 +279,23 @@ You can easily find us here:
     messages.scrollTop = messages.scrollHeight;
   }
 
+  /**
+   * Escapes HTML characters to prevent XSS.
+   * @param {string} text 
+   * @returns {string} - Escaped string.
+   */
   function escapeHtml(text) {
     const el = document.createElement("div");
     el.textContent = text;
     return el.innerHTML;
   }
 
+  /**
+   * Minimal Markdown-to-HTML parser for bot responses.
+   * Handles Bold, Italic, Code, Links, Lists, and Headings.
+   * @param {string} text 
+   * @returns {string} - Rendered HTML.
+   */
   function renderMarkdown(text) {
     let html = escapeHtml(text);
 
@@ -206,7 +308,13 @@ You can easily find us here:
     // Links: [text](url)
     html = html.replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,
-      '<a href="$2" target="_blank" rel="noopener">$1</a>',
+      function (match, text, url) {
+        if (/^(https?:|mailto:|\/)/i.test(url.trim())) {
+          return `<a href="${url}">${text}</a>`;
+        }
+        // Scrub unsafe links
+        return `[${text}](${url})`;
+      }
     );
 
     // Process list items line by line
@@ -273,6 +381,10 @@ You can easily find us here:
   // ── Hash-based Tab Activator ──────────────────────────────────────────────
   // When the user clicks a chatbot link like /course-url/#fees, the page loads
   // and this script automatically finds the matching tab and clicks it.
+  /**
+   * Parses the URL hash and attempts to activate a corresponding UI tab
+   * (e.g., #fees or #schedule) for Elementor widgets or standard tabs.
+   */
   function activateTabFromHash() {
     const hash = window.location.hash.replace("#", "").toLowerCase();
     const validTabs = ["details", "fees", "schedule", "register"];
@@ -296,7 +408,7 @@ You can easily find us here:
           tab.click();
           // Scroll the tab into view smoothly
           setTimeout(function () {
-            tab.scrollIntoView({behavior: "smooth", block: "start"});
+            tab.scrollIntoView({ behavior: "smooth", block: "start" });
           }, 150);
           return;
         }
@@ -306,7 +418,7 @@ You can easily find us here:
       const fallback = document.querySelector(`[href="#${hash}"]`);
       if (fallback) {
         fallback.click();
-        fallback.scrollIntoView({behavior: "smooth", block: "start"});
+        fallback.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }, 800); // 800 ms gives Elementor time to boot
   }
@@ -320,6 +432,9 @@ You can easily find us here:
   window.addEventListener("hashchange", activateTabFromHash);
   // ─────────────────────────────────────────────────────────────────────────
 
+  /**
+   * Displays the animated typing indicator.
+   */
   function showTyping() {
     const messages = document.getElementById("chatMessages");
     const el = document.createElement("div");
@@ -330,12 +445,18 @@ You can easily find us here:
     messages.scrollTop = messages.scrollHeight;
   }
 
+  /**
+   * Removes the typing indicator from the chat.
+   */
   function hideTyping() {
     const el = document.getElementById("typingIndicator");
     if (el) el.remove();
   }
 
   // ── Drag-to-Scroll for Quick Replies ──────────────────────────────────────
+  /**
+   * Enables mouse-based horizontal dragging for the quick replies menu.
+   */
   function initQuickRepliesDrag() {
     const quickRepliesContainer = document.getElementById("chatQuickReplies");
     if (!quickRepliesContainer) return;
@@ -380,9 +501,13 @@ You can easily find us here:
 
   // Initialize on DOM load
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initQuickRepliesDrag);
+    document.addEventListener("DOMContentLoaded", function () {
+      initQuickRepliesDrag();
+      loadChatHistory();
+    });
   } else {
     initQuickRepliesDrag();
+    loadChatHistory();
   }
   // ─────────────────────────────────────────────────────────────────────────
 })();
