@@ -1,7 +1,7 @@
 /**
  * Inventive Media AI Assistant - Frontend Logic
  *
- * Handles chat window UI, message persistence via cookies,
+ * Handles chat window UI, message persistence via localStorage,
  * markdown rendering, and integration with the WordPress REST API.
  */
 (function () {
@@ -10,56 +10,63 @@
   // Conversation history for multi-turn context
   let conversationHistory = [];
 
-  // ── Cookie helpers for chat history persistence ──────────────────────────────
+  // Storage configuration
+  const STORAGE_CONFIG = {
+    SESSION_KEY: "gc_session_active",
+    HISTORY_KEY: "gc_chat_history",
+    TIMESTAMP_KEY: "gc_chat_timestamp",
+    HISTORY_EXPIRY_HOURS: 12,
+    MAX_TURNS: 6,
+  };
+
+  // ── Storage helpers for chat history persistence ──────────────────────────────
   /**
-   * Sets a chat history cookie.
-   * @param {string} value - JSON stringified conversation history.
-   * @param {number} days - Expiration in days (defaults to 30 within the function).
+   * Checks if stored chat history has expired.
+   * @returns {boolean} True if expired, false if still valid.
    */
-  function setChatCookie(value, days) {
-    const expires = new Date(Date.now() + 30 * 864e5).toUTCString();
-    const secure = location.protocol === "https:" ? "; Secure" : "";
-    document.cookie =
-      "gc_chat_history=" +
-      encodeURIComponent(value) +
-      "; expires=" +
-      expires +
-      "; path=/; SameSite=Lax" +
-      secure;
+  function isChatHistoryExpired() {
+    const timestamp = localStorage.getItem(STORAGE_CONFIG.TIMESTAMP_KEY);
+    if (!timestamp) return true;
+
+    const storedTime = parseInt(timestamp, 10);
+    const now = Date.now();
+    const expiryMs = STORAGE_CONFIG.HISTORY_EXPIRY_HOURS * 60 * 60 * 1000;
+
+    return now - storedTime > expiryMs;
   }
 
   /**
-   * Retrieves the chat history cookie.
-   * @returns {string|null} - The decoded cookie value or null if not found.
-   */
-  function getChatCookie() {
-    const match = document.cookie.match(/(?:^|; )gc_chat_history=([^;]*)/);
-    return match ? decodeURIComponent(match[1]) : null;
-  }
-
-  /**
-   * Saves the current conversation history to a cookie.
-   * Limited to the last 6 turns to keep cookie size within 4KB limits.
+   * Saves the current conversation history to localStorage.
+   * Limited to the last 6 turns to keep storage size manageable.
    */
   function saveChatHistory() {
-    // Store only last 6 turns to stay within cookie size limits (~4 KB)
-    const toStore = conversationHistory.slice(-6);
+    const toStore = conversationHistory.slice(-STORAGE_CONFIG.MAX_TURNS);
     try {
-      setChatCookie(JSON.stringify(toStore), 7);
+      localStorage.setItem(STORAGE_CONFIG.HISTORY_KEY, JSON.stringify(toStore));
+      localStorage.setItem(STORAGE_CONFIG.TIMESTAMP_KEY, Date.now().toString());
     } catch (e) {
-      // Ignore storage errors silently
+      // Ignore storage errors (e.g., quota exceeded, private browsing)
     }
   }
 
   /**
-   * Loads chat history from the cookie and reconstructs the chat messages.
+   * Loads chat history from localStorage and reconstructs the chat messages.
+   * Returns false if history is expired or not found.
+   * @returns {boolean} True if history was loaded, false otherwise.
    */
   function loadChatHistory() {
-    const stored = getChatCookie();
-    if (!stored) return;
+    // Check if history has expired
+    if (isChatHistoryExpired()) {
+      clearChatHistory();
+      return false;
+    }
+
+    const stored = localStorage.getItem(STORAGE_CONFIG.HISTORY_KEY);
+    if (!stored) return false;
+
     try {
       const history = JSON.parse(stored);
-      if (!Array.isArray(history) || history.length === 0) return;
+      if (!Array.isArray(history) || history.length === 0) return false;
       conversationHistory = history;
 
       // Hide quick replies and system message since prior history exists
@@ -74,11 +81,31 @@
           appendMessage(turn.text, turn.role === "user" ? "user" : "bot");
         }
       }
+      return true;
     } catch (e) {
-      // Clear corrupt cookie data
-      setChatCookie("", -1);
+      // Clear corrupt data
+      clearChatHistory();
+      return false;
     }
   }
+
+  /**
+   * Clears all chat history from storage.
+   */
+  function clearChatHistory() {
+    localStorage.removeItem(STORAGE_CONFIG.HISTORY_KEY);
+    localStorage.removeItem(STORAGE_CONFIG.TIMESTAMP_KEY);
+    conversationHistory = [];
+  }
+
+  /**
+   * Session cleanup: Clear chat history when user closes the tab/window.
+   * This provides session-based behavior while still persisting across page reloads.
+   */
+  window.addEventListener("beforeunload", function () {
+    // Mark session as inactive - history will expire after 30 days anyway
+    localStorage.removeItem(STORAGE_CONFIG.SESSION_KEY);
+  });
   // ─────────────────────────────────────────────────────────────────────────────
 
   // Flag to indicate if we're dragging quick replies (prevent click activation)
@@ -228,8 +255,8 @@ You can easily find us here:
         body: JSON.stringify({
           message: message,
           history: conversationHistory,
-          // Mitigate URL noise/leaks by sending only origin and pathname
-          page_url: window.location.origin + window.location.pathname,
+          // Page-awareness feature disabled - no longer sending page_url for context
+          // page_url: window.location.origin + window.location.pathname,
         }),
       });
       const data = await response.json();
@@ -516,3 +543,9 @@ You can easily find us here:
   }
   // ─────────────────────────────────────────────────────────────────────────
 })();
+
+/*
+ * @author Lathrell Pagsuguiron
+ * @copyright 2026 Inventive Media - Web Developer Intern
+ * @link https://linkedin.com/in/lathrell
+ */

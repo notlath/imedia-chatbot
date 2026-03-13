@@ -775,3 +775,9 @@ function gemini_get_dynamic_knowledge()
 
     return $result;
 }
+
+/*
+ * @author Lathrell Pagsuguiron
+ * @copyright 2026 Inventive Media - Web Developer Intern
+ * @link https://linkedin.com/in/lathrell
+ */
