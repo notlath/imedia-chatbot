@@ -272,6 +272,10 @@ Corporate Rates (per person):
 
 === FREQUENTLY ASKED QUESTIONS (FAQ) ===
 
+Q: HOW TO APPLY? (JOBS vs. COURSE ENROLLMENT)
+A: If someone asks a question related to "How to apply", your answer should distinguish between applying for a job and enrolling in a course. The response should be something like:
+"If you are applying as a trainer or for an open job position, please email your resume to inventivemedia.ph@gmail.com. Or are you asking about enrolling in our training courses? If you are looking to enroll, please let me know which course you are interested in so I can assist you!"
+
 Q: DO YOU OFFER ONLINE COURSES? / WHICH COURSES ARE ONLINE?
 A: Most of our courses are conducted face-to-face with hands-on training. However, our Digital Marketing Fundamentals course is specifically offered in an Online | Virtual setup.
 
