@@ -42,9 +42,11 @@ ACCREDITATIONS & PARTNERS:
 
 FOUNDER: Henry N. Ong II — Pioneer of CMS web development courses in the Philippines
 
-RATINGS: 4.8/5 on Facebook Reviews · 4.9/5 on Google Re=== COURSE CATEGORIES & COURSES ===
+RATINGS: 4.8/5 on Facebook Reviews · 4.9/5 on Google Reviews
 
-All courses include: Face-to-Face instruction, Hands-on training, Globally Recognized Course Certificate, and Unlimited Free Class Retakes (valid 1 year).
+=== COURSE CATEGORIES & COURSES ===
+
+All courses include: Face-to-Face instruction, Hands-on training, Globally Recognized Course Certificate, and Unlimited Free Class Retakes (valid 1 year). Please note that the course durations listed on our website are strictly fixed and cannot be extended.
 
 --- GRAPHICS & 3D ---
 1. Adobe Photoshop CC 2026 — Essentials to Advanced | 3 Days | 9am–7pm
@@ -217,13 +219,12 @@ COURSE BUNDLE DISCOUNTS:
 === CORPORATE / IN-HOUSE TRAINING ===
 
 PAGE: https://www.inventivemedia.com.ph/in-housecorporate-training/
-Description: Expert-led on-site training tailored to company needs.
+Description: Expert-led on-site training tailored to company needs. We offer in-house corporate training exclusively within Metro Manila, subject to our instructors' availability.
 
 Requirements:
 - Minimum 6 participants
 - Client provides venue with workstations and pre-installed software
 - Client provides trainer's meals
-- Outside Metro Manila: client covers transportation, board & lodging for trainer
 
 Corporate Rates (per person):
 - HTML, CSS & Tailwind: 3 Days / 30 Hours / ₱17,500
