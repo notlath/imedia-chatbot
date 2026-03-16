@@ -117,6 +117,7 @@
     // Build system instruction from both knowledge sources
     $static_kb    = gemini_get_static_knowledge();
     $dynamic_kb   = gemini_get_dynamic_knowledge();
+    $catalog_kb   = gc_format_course_catalog();
     $current_time = wp_date('l, F j, Y, h:i A');
     $current_year = wp_date('Y');
     $years_op     = intval($current_year) - 2006;
@@ -175,6 +176,11 @@ ROLE & BEHAVIOR:
 
 === DYNAMIC WEBSITE CONTENT ===
 {$dynamic_kb}
+
+=== COURSE CATALOG (PREREQUISITES & DETAILS) ===
+Use the following course-level details to answer any question about prerequisites, who a course is for, or what students will learn. Always be specific—do not make up prerequisites not listed here.
+
+{$catalog_kb}
 EOT;
 
 

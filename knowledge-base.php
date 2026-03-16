@@ -784,6 +784,384 @@ function gemini_get_dynamic_knowledge()
     return $result;
 }
 
+/**
+ * Returns the detailed course catalog with prerequisites and full descriptions.
+ * Data was scraped directly from each course page on inventivemedia.com.ph.
+ */
+function gc_get_course_catalog() {
+    return [
+
+        // ── GRAPHIC DESIGN ──────────────────────────────────────────────
+        [
+            'name'            => 'Graphic Design Essentials',
+            'category'        => 'Graphic Design',
+            'description'     => 'This course covers fundamental design principles that can be used in any graphic design software of your choice. Students will gain a solid understanding of color theory, typography, layout, and design thinking.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. No prior design experience required.',
+            'target_audience' => 'Beginners, aspiring graphic designers, marketers, and anyone who wants to understand design fundamentals.',
+            'what_you_learn'  => 'Fundamental design principles, color theory, typography, layout composition, and design thinking applicable across all design software.',
+        ],
+        [
+            'name'            => 'Adobe Photoshop',
+            'category'        => 'Graphic Design',
+            'description'     => 'Master Adobe Photoshop and Generative AI in 3 days with hands-on training in photo manipulation, retouching, and compositing. Learn to leverage Adobe Firefly, Generative Fill, and Generative Expand alongside industry-standard workflows.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Graphic Design Essentials Course. Knowledge in any graphic design applications such as Adobe Illustrator and CorelDraw can be an advantage though not required.',
+            'target_audience' => 'Graphic Designers, Web Designers, Photographers, Digital Artists, Video Editors, UI/UX Designers, Print Production Artists, Art Directors.',
+            'what_you_learn'  => 'Graphic design for print and digital media, web design, photo editing and enhancement, digital art creation, user interface design, and preparing images for print.',
+        ],
+        [
+            'name'            => 'Adobe Lightroom',
+            'category'        => 'Graphic Design',
+            'description'     => 'Adobe Lightroom training course designed to equip photographers and image editors with the skills to manage, enhance, and export photos professionally using Adobe Lightroom\'s powerful non-destructive editing workflow.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Basic knowledge in photography is an advantage but not required. Knowledge in Adobe Photoshop is an advantage but not required.',
+            'target_audience' => 'Photographers, digital artists, and creative professionals who want to master photo management, editing, and workflow optimization.',
+            'what_you_learn'  => 'Photo management and organization in Lightroom, non-destructive editing, color grading, batch processing, and photo export workflows.',
+        ],
+        [
+            'name'            => 'Adobe Illustrator',
+            'category'        => 'Graphic Design',
+            'description'     => 'Adobe Illustrator training course that teaches students how to create vector graphics, logos, illustrations, and other design elements for print and digital media.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Graphic Design Essentials Course. Knowledge in Adobe Photoshop can be an advantage but not required.',
+            'target_audience' => 'Graphic designers, illustrators, marketing professionals, and anyone who needs to create scalable vector artwork.',
+            'what_you_learn'  => 'Vector graphic creation, logo design, illustration techniques, typography, and producing print-ready and digital artwork in Adobe Illustrator.',
+        ],
+        [
+            'name'            => 'Adobe InDesign',
+            'category'        => 'Graphic Design',
+            'description'     => 'Adobe InDesign training course designed to teach students how to create professional layouts for print and digital publishing, including brochures, magazines, books, and interactive PDFs.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Graphic Design Essentials Course. Knowledge in Adobe Photoshop and Illustrator is an advantage but not required.',
+            'target_audience' => 'Graphic designers, desktop publishers, marketing professionals, and anyone involved in print or digital layout design.',
+            'what_you_learn'  => 'Page layout fundamentals, typography, working with images and text, creating multi-page documents, and producing print-ready and interactive PDF files.',
+        ],
+        [
+            'name'            => 'CorelDRAW',
+            'category'        => 'Graphic Design',
+            'description'     => 'CorelDRAW training course covering vector illustration, layout, and design for print and digital media using CorelDRAW Graphics Suite.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Graphic Design Essentials Course. Knowledge in any graphic design application is an advantage but not required.',
+            'target_audience' => 'Graphic designers, sign makers, print production artists, and anyone who wants to learn CorelDRAW for professional design work.',
+            'what_you_learn'  => 'Vector illustration, logo creation, page layout, working with text and images, and producing print-ready designs using CorelDRAW.',
+        ],
+        [
+            'name'            => 'Adobe Animate',
+            'category'        => 'Graphic Design',
+            'description'     => 'Adobe Animate training course that teaches students how to create interactive animations, web banners, and multimedia content for web and digital platforms.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Graphic Design Essentials Course. Knowledge in Adobe Photoshop and Illustrator is an advantage but not required.',
+            'target_audience' => 'Animators, web designers, digital marketers, and anyone who wants to create interactive and animated content for the web.',
+            'what_you_learn'  => 'Animation fundamentals, timeline-based animation, creating interactive content, working with symbols and motion tweens, and exporting for web and digital platforms.',
+        ],
+
+        // ── WEB DEVELOPMENT – FRONT-END ─────────────────────────────────
+        [
+            'name'            => 'HTML, CSS & Tailwind',
+            'category'        => 'Web Development',
+            'description'     => 'Comprehensive front-end web development course covering HTML structure, CSS styling, and the Tailwind CSS utility-first framework for building modern, responsive websites.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. No prior programming experience required.',
+            'target_audience' => 'Aspiring web developers, designers moving into development, IT students, and anyone looking to start building websites from scratch.',
+            'what_you_learn'  => 'HTML5 structure and semantics, CSS3 styling and layout, responsive web design, and utility-first design with Tailwind CSS.',
+        ],
+        [
+            'name'            => 'JavaScript Essentials',
+            'category'        => 'Web Development',
+            'description'     => 'Foundational JavaScript course covering core programming concepts, DOM manipulation, and interactive web development techniques.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the HTML, CSS & Tailwind Course.',
+            'target_audience' => 'Aspiring front-end and full-stack developers, web designers, and IT students who want to add interactivity to websites.',
+            'what_you_learn'  => 'JavaScript fundamentals, variables, functions, DOM manipulation, event handling, and building interactive web features.',
+        ],
+        [
+            'name'            => 'React JS Essentials',
+            'category'        => 'Web Development',
+            'description'     => 'React JS course covering component-based UI development, state management, and building modern single-page applications using the React framework.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the HTML, CSS & Tailwind Course. Must have completed JavaScript Essentials.',
+            'target_audience' => 'Front-end developers who already know JavaScript and want to build scalable, component-based web applications using React.',
+            'what_you_learn'  => 'React components, JSX, state and props, hooks, React Router, and building full single-page applications with React.',
+        ],
+        [
+            'name'            => 'jQuery Essentials',
+            'category'        => 'Web Development',
+            'description'     => 'jQuery training course covering DOM manipulation, event handling, AJAX, and animation using the jQuery library to add dynamic behavior to web pages.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the HTML, CSS & Tailwind Course. Must have a basic understanding of JavaScript.',
+            'target_audience' => 'Web developers who want to quickly add interactivity and dynamic features to websites using jQuery.',
+            'what_you_learn'  => 'jQuery selectors, DOM manipulation, event handling, AJAX calls, and animations to create dynamic, interactive web pages.',
+        ],
+
+        // ── WEB DEVELOPMENT – BACK-END ──────────────────────────────────
+        [
+            'name'            => 'PHP with MySQL',
+            'category'        => 'Web Development',
+            'description'     => 'PHP with MySQL training class designed to provide individuals with the skills and knowledge needed to build dynamic and interactive web applications. Covers PHP basics, object-oriented programming, database management with MySQL, and best practices for development.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the HTML, CSS & Tailwind Course. Knowledge in JavaScript can be an advantage though not required.',
+            'target_audience' => 'Aspiring back-end developers, front-end developers upgrading to full-stack development, IT students and professionals, and future framework users.',
+            'what_you_learn'  => 'PHP basics, object-oriented programming, database management with MySQL, and best practices for building secure, dynamic websites.',
+        ],
+        [
+            'name'            => 'Laravel PHP Framework',
+            'category'        => 'Web Development',
+            'description'     => '4-day Laravel course created to enable students to acquire expertise in Laravel and build robust web applications by harnessing its elegant syntax, advanced features, and powerful tools.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the HTML, CSS & Tailwind Course. Must have completed the PHP with MySQL Course. Must have a basic understanding of Object-Oriented Programming (OOP) and Model-View-Controller (MVC) architecture.',
+            'target_audience' => 'Current Web Programming Students, Back-End PHP Developers, Custom Web App Creators, and Aspiring Laravel Experts.',
+            'what_you_learn'  => 'MVC architecture, routing, controllers, views, secure request/form handling, Laravel features, and building a basic eCommerce site with an admin panel.',
+        ],
+        [
+            'name'            => 'Ruby on Rails',
+            'category'        => 'Web Development',
+            'description'     => '4-day course covering the Ruby programming language and the Ruby on Rails framework, from Ruby basics to building full web applications using the MVC architecture.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Should be proficient in HTML5, CSS3 with Bootstrap 5. Should be proficient in JavaScript Essentials.',
+            'target_audience' => 'Aspiring Full-Stack Developers, Startup Founders & MVP Builders, Backend Developers switching from PHP/Python, Freelancers targeting international markets.',
+            'what_you_learn'  => 'Ruby language basics, object-oriented programming, Rails MVC architecture, Active Record, database management, validations, associations, and building full web applications.',
+        ],
+
+        // ── CMS ─────────────────────────────────────────────────────────
+        [
+            'name'            => 'WordPress CMS',
+            'category'        => 'Web Development (CMS)',
+            'description'     => 'World\'s most popular CMS (PHP/MySQL). Covers installing and configuring WordPress, managing content, customizing themes, optimizing for SEO, and securing websites.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Knowledge in HTML, CSS, Bootstrap, and JavaScript can be an advantage but not required.',
+            'target_audience' => 'Business Owners, Digital Marketers, Freelancers, Government & Corporate Staff, and Beginners who want to master the world\'s top CMS.',
+            'what_you_learn'  => 'Installing and configuring WordPress, managing posts and pages, customizing themes and settings, SEO optimization, creating forms, and securing websites.',
+        ],
+        [
+            'name'            => 'WordPress Custom Theme with Elementor',
+            'category'        => 'Web Development (CMS)',
+            'description'     => 'Philippines\' first WordPress Elementor Training. Learn Elementor Theme Builder mastery and create stunning, user-friendly websites in just 2 days—without coding.',
+            'prerequisites'   => 'Should have completed WordPress CMS Web Development course. Knowledge in any Graphic Design Application is an advantage but not required.',
+            'target_audience' => 'Graphic Designers, Digital Marketers, Entrepreneurs, Freelancers, and No-Code Enthusiasts who want to build high-end websites visually.',
+            'what_you_learn'  => 'Creating custom headers, footers, and page templates with Elementor Pro, customizing design settings, using custom elements, and ensuring mobile responsiveness.',
+        ],
+        [
+            'name'            => 'Joomla CMS',
+            'category'        => 'Web Development (CMS)',
+            'description'     => '2011\'s Best CMS Awardee and world\'s most popular CMS. Database-driven (PHP/MySQL) web development made easy for building dynamic websites.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Knowledge in HTML & CSS and JavaScript can be an advantage but not required.',
+            'target_audience' => 'Government & Public Sector Staff, IT Professionals, Global Business Owners, Data-Heavy Site Builders, and Advanced Web Freelancers.',
+            'what_you_learn'  => 'Installing and configuring Joomla, managing articles and menus, using extensions, managing users, and optimizing content for SEO.',
+        ],
+        [
+            'name'            => 'Drupal CMS',
+            'category'        => 'Web Development (CMS)',
+            'description'     => 'Comprehensive Drupal course tailored for absolute beginners, guiding them to create and manage dynamic, database-driven websites with Drupal CMS—no coding required.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Knowledge in HTML, CSS, Bootstrap and JavaScript can be an advantage but not required.',
+            'target_audience' => 'Government & Enterprise IT, Full-Stack Developers, Ambitious Site Builders, Content Strategists, and E-commerce Managers.',
+            'what_you_learn'  => 'Installing and configuring Drupal, managing content, user accounts, multimedia, and effectively using various modules and themes.',
+        ],
+
+        // ── VIDEO EDITING ────────────────────────────────────────────────
+        [
+            'name'            => 'Adobe Premiere Pro',
+            'category'        => 'Video Editing',
+            'description'     => 'Master Adobe Premiere Pro, the industry standard for professional film and high-impact social media. Hands-on training covering seamless storytelling, cinematic effects, and viral-ready techniques for TikTok, Reels, and YouTube.',
+            'prerequisites'   => 'Basic computer knowledge and skills in Mac or PC. Basic knowledge in video editing and motion graphics is an advantage but not required. Knowledge in Photoshop and Illustrator is an advantage but not required.',
+            'target_audience' => 'Aspiring video editors, content creators, marketing professionals, corporate communicators, and multimedia designers.',
+            'what_you_learn'  => 'Stages of video production, managing assets, video editing essentials, multi-camera editing, adding text and transitions, audio mixing, compositing, color grading, and exporting.',
+        ],
+        [
+            'name'            => 'Adobe After Effects',
+            'category'        => 'Video Editing',
+            'description'     => 'Industry-standard post-production training for creating visual effects, motion graphics, and compositing in film and video.',
+            'prerequisites'   => 'Basic computer knowledge and skills in PC or Mac. Must be proficient in Adobe Premiere Pro or other linear video editing application, most especially in Keyframing. Knowledge in Photoshop and Illustrator is an advantage but not required.',
+            'target_audience' => 'Aspiring motion designers, VFX & compositing artists, graphic designers transitioning to motion assets, social media content creators, and marketing & branding specialists.',
+            'what_you_learn'  => 'Basic animations, masks, animating text and shape layers, applying effects, puppet tools, rendering and output.',
+        ],
+        [
+            'name'            => 'DaVinci Resolve',
+            'category'        => 'Video Editing',
+            'description'     => '3-day comprehensive training in DaVinci Resolve covering video editing, color grading, visual effects, motion graphics, and audio post-production in a single interface.',
+            'prerequisites'   => 'Basic computer knowledge and skills in Mac or PC. Basic knowledge in video editing and motion graphics is an advantage but not required. Knowledge in Photoshop and Illustrator is an advantage but not required.',
+            'target_audience' => 'Aspiring colorists, professional video editors, independent filmmakers, VFX & motion artists, YouTube & social media creators, and sound designers.',
+            'what_you_learn'  => 'DaVinci Resolve interface, basic and advanced editing, color grading fundamentals, sound design, visual effects, and project finalization.',
+        ],
+
+        // ── DIGITAL MARKETING ────────────────────────────────────────────
+        [
+            'name'            => 'Digital Marketing Fundamentals',
+            'category'        => 'Digital Marketing',
+            'description'     => 'Introduces students to various online marketing platforms like SEO, email marketing, PPC (Google Ads), and Social Media Marketing to drive online customers to their business.',
+            'prerequisites'   => 'Basic computer knowledge and skills in PC or Mac. Experience in Sales & Marketing is an advantage but not required.',
+            'target_audience' => 'Aspiring digital marketers, business owners, marketing professionals, freelancers, content creators, career changers, and sales executives.',
+            'what_you_learn'  => 'Brand positioning, buyer personas, digital marketing strategy, performance-driven marketing tools, and introduction to SEO, email marketing, PPC, and social media.',
+        ],
+        [
+            'name'            => 'Search Engine Optimization (SEO)',
+            'category'        => 'Digital Marketing',
+            'description'     => 'SEO training designed to help beginners and professionals improve website rankings on search engines like Google, Bing, and Yahoo through keyword research, on-page SEO, technical fixes, and link building.',
+            'prerequisites'   => 'Basic computer knowledge and skills in PC or Mac. Should have completed the Digital Marketing Fundamentals course. Sales and Marketing experience is a plus, but it\'s not a necessity.',
+            'target_audience' => 'Digital Marketing Professionals, Business Owners & Entrepreneurs, Web Developers & Designers, Content Creators, E-commerce Managers, Freelancers.',
+            'what_you_learn'  => 'Step-by-step keyword research, on-page SEO best practices, technical SEO fixes, beginner-friendly link building strategies, and AI-driven search strategies and AEO.',
+        ],
+        [
+            'name'            => 'Social Media Marketing',
+            'category'        => 'Digital Marketing',
+            'description'     => 'Comprehensive 3-day Social Media Marketing course covering Facebook, LinkedIn, Instagram, YouTube, and TikTok strategy with a focus on ROI and community growth.',
+            'prerequisites'   => 'Basic computer knowledge and skills in PC or Mac. Should have completed the Digital Marketing Fundamentals course. Experience in Sales & Marketing is an advantage but not required.',
+            'target_audience' => 'Business Owners, Digital Marketing Professionals, Social Media Managers, Content Creators, Freelancers, E-commerce Managers.',
+            'what_you_learn'  => 'Buyer personas, competitor analysis, content marketing strategy, Facebook and social media account setup, advertising types, analytics interpretation, and AI-driven social strategies.',
+        ],
+        [
+            'name'            => 'Google Ads Certification (PPC)',
+            'category'        => 'Digital Marketing',
+            'description'     => 'Google Ads training covering targeted campaign creation, keyword optimization, budget management, and complete preparation for the Google Ads Certification exam.',
+            'prerequisites'   => 'Basic computer knowledge and skills in PC or Mac. Completed the Digital Marketing Fundamentals course. Experience in Sales & Marketing is an advantage. Knowledge in SEO is an advantage but not required.',
+            'target_audience' => 'Business Owners, Digital Marketing Professionals, Freelancers, E-commerce & Store Managers, Sales & Real Estate Professionals, Career Shifters.',
+            'what_you_learn'  => 'Creating effective Google Ads campaigns (search, display, video), keyword strategies, budget management, and campaign optimization.',
+        ],
+
+        // ── NETWORKING & SECURITY ────────────────────────────────────────
+        [
+            'name'            => 'Basic Networking',
+            'category'        => 'Networking',
+            'description'     => 'Covers networking basics including types of networks, IP addresses, computer-to-computer connections, resource sharing, router configuration, cable setup, and user account management.',
+            'prerequisites'   => 'Basic computer knowledge and skills in PC or Mac. Basic knowledge in computer hardware and software.',
+            'target_audience' => 'Aspiring IT Professionals, IT Support & Technical Staff, CCTV & Security System Integrators, Structured Cabling Technicians, Small Business Owners, Computer Science & IT Students.',
+            'what_you_learn'  => 'Networking principles, configuration of wired and wireless networks, device sharing, router management, and basic network troubleshooting.',
+        ],
+        [
+            'name'            => 'CCTV Security Surveillance',
+            'category'        => 'Networking',
+            'description'     => 'Advanced CCTV program covering design, installation, maintenance, and operation of Analog, IP-based, and Wireless CCTV systems aligned with international standards.',
+            'prerequisites'   => 'Proficiency in IPv4 Addressing & Subnetting, experience with Network Cabling (Cat5e/Cat6) and T568B standards, ability to configure Wired and Wireless Routers, understanding of LAN/WAN and P2P networking, and basic computer hardware and software skills.',
+            'target_audience' => 'IT & Network Admins, System Integrators, Engineers & ECEs, Facility Managers, and Security Business Owners.',
+            'what_you_learn'  => 'IP-based CCTV system design, installation, configuration, remote access, and maintenance of Analog and IP surveillance systems.',
+        ],
+        [
+            'name'            => 'Fire Detection & Alarm System (FDAS)',
+            'category'        => 'Networking',
+            'description'     => 'Most complete FDAS Technical Training in the Philippines with hands-on exercises in fire alarm panels, detectors, cabling, installation, design, commissioning, and maintenance. Graduates receive a Bureau of Fire Protection Accredited Training Certificate.',
+            'prerequisites'   => 'Basic computer operation skills. Basic knowledge in electronics and electrical is an advantage though not required.',
+            'target_audience' => 'Electronics Engineers, Firefighters & Responders, Safety Inspectors, Facility Managers, and System Integrators.',
+            'what_you_learn'  => 'Addressable Systems logic and integration, FACP interfaces, technical auditing, building safety system management, and professional wiring and programming of fire detection systems.',
+        ],
+        [
+            'name'            => 'Fiber Optics Installer',
+            'category'        => 'Networking',
+            'description'     => 'Comprehensive fiber optics training covering fundamental principles, technologies, and practical aspects—30% theory and 70% hands-on, covering splicing, termination, testing, installation, and troubleshooting.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Basic knowledge in computer hardware and software. Should be proficient in Networking Essentials both Wired and Wireless.',
+            'target_audience' => 'IT & Network Professionals, Electronics & Electrical Engineers, Field Service Technicians, CCTV & FDAS Installers, Telecommunications Contractors.',
+            'what_you_learn'  => 'Fusion splicing, OTDR testing, precision termination, fiber optic installation, testing methodologies, and safety regulations.',
+        ],
+
+        // ── SERVER ADMINISTRATION ────────────────────────────────────────
+        [
+            'name'            => 'MS Windows Server 2022 Administration',
+            'category'        => 'Server Administration',
+            'description'     => 'Comprehensive training to install, configure, and manage on-premise Windows Server 2022, including Active Directory, DHCP, DNS, disaster recovery, virtualization with Hyper-V, and performance monitoring.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Basic knowledge in computer hardware and software. Should be proficient in Networking Essentials both Wired and Wireless.',
+            'target_audience' => 'Junior System Administrators, IT Support & Technicians, Network Engineers, Virtualization Specialists, Security & Compliance Officers, Technical Consultants.',
+            'what_you_learn'  => 'Installing and administering Windows Server 2022, Active Directory, DHCP, DNS, disaster recovery, Hyper-V virtualization, and performance monitoring.',
+        ],
+        [
+            'name'            => 'MS Windows Server 2022 - Active Directory',
+            'category'        => 'Server Administration',
+            'description'     => 'Advanced Windows Server 2022 training focused on Active Directory administration, from user management to implementing group policies.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Basic knowledge in computer hardware and software. Proficiency in Networking Essentials both Wired and Wireless. Must have completed the Microsoft Windows Server Administration course.',
+            'target_audience' => 'Systems Administrators, IT Security Leads, Infrastructure Engineers, IAM Specialists, Hybrid Cloud Admins, Consultants.',
+            'what_you_learn'  => 'Active Directory concepts, installation and configuration, managing AD objects, Group Policy, AD security, integration, high availability, disaster recovery, and troubleshooting.',
+        ],
+
+        // ── PROGRAMMING ──────────────────────────────────────────────────
+        [
+            'name'            => 'Python Programming Essentials',
+            'category'        => 'Programming',
+            'description'     => 'Most intensive 4-day Python training course in the Philippines. Comprehensive exploration of Python\'s syntax, object-oriented design, and diverse standard library applications.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Basic understanding of fundamental programming concepts. Previous coding experience in other languages is an advantage though not required.',
+            'target_audience' => 'Programming Beginners, Aspiring Data Scientists & Analysts, Task Automation Seekers, Future Back-End Developers.',
+            'what_you_learn'  => 'Python syntax, object-oriented programming, data structures, file handling, modules and packages, web development, multithreading, and Python best practices.',
+        ],
+        [
+            'name'            => 'Django Python Framework',
+            'category'        => 'Programming',
+            'description'     => 'Intensive 4-day Django course covering model creation, database management, user authentication, URL routing, and building secure, scalable Python web applications.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Python Programming Essentials Course. Must have completed the HTML, CSS & Tailwind Course. Basic understanding of databases can be an advantage.',
+            'target_audience' => 'Python Programmers, Aspiring Full-Stack Developers, Data Analysts & Scientists, Custom Web App Creators.',
+            'what_you_learn'  => 'Building dynamic web applications with Django, user authentication, Django REST Framework for APIs, writing tests, deploying Django apps, and advanced Django features.',
+        ],
+        [
+            'name'            => 'Python for Data Science',
+            'category'        => 'Programming',
+            'description'     => 'Intensive 4-day Data Science Bootcamp covering data manipulation, statistics, machine learning, and data visualization through hands-on projects and case studies.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Must have completed the Python Programming Essentials Course. Basic knowledge of mathematics and statistics is an advantage though not required.',
+            'target_audience' => 'Beginners in Data Science, Aspiring Data Scientists & Analysts, Software Developers, Business Professionals, Career Shifters.',
+            'what_you_learn'  => 'Data manipulation, data visualization, statistical methodologies, machine learning models, and creating analytical dashboards.',
+        ],
+        [
+            'name'            => 'Java Programming Essentials',
+            'category'        => 'Programming',
+            'description'     => '4-day comprehensive Java training covering Java fundamentals, object-oriented programming, syntax, and real-world application development from the ground up.',
+            'prerequisites'   => 'Basic Computer knowledge and Skills in PC or Mac. Basic understanding of fundamental programming concepts. Basic understanding of OOP principles. Previous coding experience in other languages is an advantage.',
+            'target_audience' => 'Programming Beginners, Computer Science Students, Career Shifters, and Future Software Engineers.',
+            'what_you_learn'  => 'Java fundamentals, OOP, syntax, classes and inheritance, object polymorphism, database interaction, and real-world application development.',
+        ],
+
+        // ── CLOUD & CERTIFICATIONS ───────────────────────────────────────
+        [
+            'name'            => 'AWS Cloud Practitioner',
+            'category'        => 'Cloud & Certifications',
+            'description'     => 'Beginner-friendly AWS Cloud Practitioner training offering a comprehensive introduction to Amazon cloud services and the fundamentals of working in the AWS Cloud.',
+            'prerequisites'   => 'Familiarity with cloud computing is helpful but not necessary. A basic understanding of networking fundamentals (wired and wireless).',
+            'target_audience' => 'Anyone wanting a foundational understanding of AWS and cloud computing. IT professionals tasked to work, manage, and maintain AWS.',
+            'what_you_learn'  => 'Fundamental AWS knowledge, AWS services including EC2, storage solutions, security measures, and benefits of AWS Global Infrastructure.',
+        ],
+        [
+            'name'            => 'Architecting on AWS',
+            'category'        => 'Cloud & Certifications',
+            'description'     => 'Teaches solutions architects, engineers, and developers to build secure, resilient IT solutions on AWS using best practices in security, networking, storage, and databases.',
+            'prerequisites'   => 'Completed AWS Cloud Practitioner. Working knowledge of distributed systems. Familiarity with general networking concepts and IP addressing. Working knowledge of multi-tier architectures.',
+            'target_audience' => 'Solution architects, solution-design engineers, developers seeking AWS architecting knowledge, individuals seeking the AWS Solutions Architect-Associate certification.',
+            'what_you_learn'  => 'Designing resilient, secure, and scalable AWS solutions incorporating security, networking, and data storage services.',
+        ],
+        [
+            'name'            => 'Microsoft Azure Fundamentals',
+            'category'        => 'Cloud & Certifications',
+            'description'     => 'Solid understanding of Azure\'s core concepts including cloud computing basics, virtualization, and Azure services. Preparation for the AZ-900 certification exam.',
+            'prerequisites'   => 'Familiarity with cloud computing is helpful but not necessary. Understanding of network configurations including TCP/IP and DNS.',
+            'target_audience' => 'Beginners, IT Professionals, Developers, Students, Business Stakeholders, Career Changers.',
+            'what_you_learn'  => 'Core Azure services and architecture, cloud computing concepts, security, monitoring, management tools, and choosing correct Azure services for business scenarios.',
+        ],
+        [
+            'name'            => 'Microsoft Azure Administrator',
+            'category'        => 'Cloud & Certifications',
+            'description'     => 'Comprehensive Microsoft Azure Administrator certification training covering cloud subscription management, identity security, networking, virtual machine deployment, and web app implementation.',
+            'prerequisites'   => 'Should have completed the Microsoft Azure Fundamentals course. Basic understanding of cloud computing, virtualization, networking (TCP/IP, DNS, VPNs), and security principles. Familiarity with PowerShell is an advantage.',
+            'target_audience' => 'IT professionals, system administrators, cloud engineers, network administrators, DevOps professionals, technical support professionals, and those preparing for the AZ-104 exam.',
+            'what_you_learn'  => 'Azure Active Directory, subscription management, Azure Policy, Azure Resource Manager, virtual networking, network traffic management, Azure storage, virtual machines, data protection, and monitoring.',
+        ],
+        [
+            'name'            => 'ITIL v4 Foundation',
+            'category'        => 'Cloud & Certifications',
+            'description'     => 'ITIL v4 Foundation training introducing an end-to-end operating model for the creation, delivery, and continual improvement of technology-enabled products and services.',
+            'prerequisites'   => 'Basic IT Knowledge (familiarity with IT terminology and concepts). Work experience in IT or related fields is helpful but not mandatory. Interest in IT Service Management.',
+            'target_audience' => 'IT and digital service professionals, anyone interested in improving IT service delivery, aligning IT with business goals, and enhancing customer satisfaction.',
+            'what_you_learn'  => 'How modern IT and digital service organizations operate, value streams, cultural/behavioral principles, and commonly-used service management terms and concepts.',
+        ],
+
+    ];
+}
+
+/**
+ * Formats the course catalog array into plain text for injection into the Gemini system prompt.
+ * Groups courses by category and lists description, prerequisites, target audience, and what you learn.
+ */
+function gc_format_course_catalog(): string {
+    $courses  = gc_get_course_catalog();
+    $sections = [];
+    $grouped  = [];
+
+    foreach ($courses as $course) {
+        $grouped[$course['category']][] = $course;
+    }
+
+    foreach ($grouped as $category => $items) {
+        $lines = ["## {$category}"];
+        foreach ($items as $c) {
+            $lines[] = "### {$c['name']}";
+            $lines[] = "Description: {$c['description']}";
+            $lines[] = "Prerequisites: {$c['prerequisites']}";
+            $lines[] = "Who it's for: {$c['target_audience']}";
+            $lines[] = "What you'll learn: {$c['what_you_learn']}";
+        }
+        $sections[] = implode("\n", $lines);
+    }
+
+    return implode("\n\n", $sections);
+}
+
 /*
  * @author Lathrell Pagsuguiron
  * @copyright 2026 Inventive Media - Web Developer Intern
