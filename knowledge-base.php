@@ -216,6 +216,10 @@ COURSE BUNDLE DISCOUNTS:
 - WordPress CMS + WordPress with Elementor (2 Course Package): ₱20,000 regular price → ₱4,000 off
 - Basic Networking + CCTV Security Surveillance (2 Course Package): ₱21,000 regular price → ₱5,000 off
 
+BUNDLES & PACKAGES NOTE:
+While we primarily focus on individual course discounts, we do occasionally offer course bundles or packages for select programs depending on our current promotions.
+To see which specific bundles or individual discounts are active right now, please visit our official promo page: https://www.inventivemedia.com.ph/training-promo/
+
 === CORPORATE / IN-HOUSE TRAINING ===
 
 PAGE: https://www.inventivemedia.com.ph/in-housecorporate-training/
@@ -682,18 +686,17 @@ Certifications: Certified LEAN SIX SIGMA Yellow Belt, MCP/MCTS/MCSA/MCITP, ITIL 
 
 === PAYMENT OPTIONS ===
 
+We only request payment once the training is guaranteed to proceed. You will receive a confirmation notice from us before any deposit is required.
+
+Payment Schedule:
+- Face-to-Face: 50% downpayment upon confirmation; 50% balance on the first day.
+- Live Online: Full payment required upon confirmation.
+
 Accepted Payment Methods:
 - Cash
-- Bank Cheque (Note: Payment should clear before the training date)
+- GCash
 - Bank/Online Transfer
-- Globe GCash
-- Credit Card (Temporarily Not Available)
-
-Payment Arrangement for Physical/Face-to-Face Classes:
-- Once the training has been confirmed to push through, a 50% payment is required for the class. The balance can be settled during the first day of the class.
-
-Payment Arrangement for Virtual/Online Classes:
-- Joining any Live Online Training will require full payment. Payment shall only be requested once the class is confirmed to push through.
+Note: If paying by cheque, funds must be cleared prior to the training date.
 
 === TRAINING PROPOSAL REQUEST ===
 
@@ -719,9 +722,9 @@ Mandatory Reply Policy:
 - IMPORTANT: This step is essential to distinguish legitimate applicants from the high volume of daily spam registrations (approx. 40%). Failure to acknowledge a reservation may result in the contact information being restricted from future registrations in the system.
 
 Payment Terms:
-- Payment details will be shared only after the class is officially confirmed.
-- Initial Payment: A 50% downpayment is required once the training is confirmed.
-- Remaining Balance: The final 50% may be settled on the first day of the class.
+- Payment is only requested once the class is officially confirmed to proceed.
+- Face-to-Face: 50% downpayment upon confirmation; 50% balance on the first day.
+- Live Online: Full payment required upon confirmation.
 
 KB;
 }
