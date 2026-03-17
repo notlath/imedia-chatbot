@@ -130,6 +130,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 24. Digital Marketing Fundamentals | 2 Days (Online | Virtual Setup)
     URL: https://www.inventivemedia.com.ph/digital-marketing-training-course-philippines/
     SETUP: This course is conducted in an Online | Virtual setup.
+    Overview: This introductory course provides a foundational overview of essential digital marketing concepts. It is perfect for beginners seeking a broad understanding of the field. For comprehensive, hands-on training in specific areas like running ad campaigns, we recommend our specialized programs such as Social Media Marketing or Google Ads.
 
 25. Search Engine Optimization (SEO) | 3 Days
     URL: https://www.inventivemedia.com.ph/seo-training-philippines/
