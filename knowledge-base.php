@@ -686,6 +686,8 @@ Certifications: Certified LEAN SIX SIGMA Yellow Belt, MCP/MCTS/MCSA/MCITP, ITIL 
 
 === PAYMENT OPTIONS ===
 
+IMPORTANT: We have discontinued the installment payment option due to collection challenges, as a significant number of students were unable to meet their payment obligations.
+
 We only request payment once the training is guaranteed to proceed. You will receive a confirmation notice from us before any deposit is required.
 
 Payment Schedule:
@@ -722,6 +724,7 @@ Mandatory Reply Policy:
 - IMPORTANT: This step is essential to distinguish legitimate applicants from the high volume of daily spam registrations (approx. 40%). Failure to acknowledge a reservation may result in the contact information being restricted from future registrations in the system.
 
 Payment Terms:
+- IMPORTANT: We have discontinued the installment payment option due to collection challenges, as a significant number of students were unable to meet their payment obligations.
 - Payment is only requested once the class is officially confirmed to proceed.
 - Face-to-Face: 50% downpayment upon confirmation; 50% balance on the first day.
 - Live Online: Full payment required upon confirmation.
