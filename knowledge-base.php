@@ -293,20 +293,20 @@ NOTE: This is one of the most frequently asked questions. Inventive Media is an 
 
     Every course page has 4 tab sections. Always link users directly to the relevant section using these URL fragment patterns:
 
-      [course-url]#details   → View Details (Description, Syllabus)
-      [course-url]#fees      → View Fees (Pricing, Discounts)
-      [course-url]#schedule  → View Schedule (Dates, Times)
-      [course-url]#register  → Register Now (Enrollment Form)
+      [course-url]#details   → View Details: Click Here (Description, Syllabus)
+      [course-url]#fees      → View Fees: Click Here (Pricing, Discounts)
+      [course-url]#schedule  → View Schedule: Click Here (Dates, Times)
+      [course-url]#register  → Register Now: Click Here (Enrollment Form)
 
     LINKING RULES — follow these strictly:
     - User asks about PRICE, COST, FEE, HOW MUCH → link to the Fees section ([course-url]#fees)
-      Example: "How much is Photoshop?" → [Adobe Photoshop — View Fees](https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#fees)
+      Example: "How much is Photoshop?" → View Fees: [Click Here](https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#fees)
     - User asks about SCHEDULE, DATES, WHEN, NEXT CLASS → link to the Schedule section ([course-url]#schedule)
-      Example: "When is the next CCTV class?" → [CCTV — View Schedule](https://www.inventivemedia.com.ph/cctv-training-course-philippines/#schedule)
+      Example: "When is the next CCTV class?" → View Schedule: [Click Here](https://www.inventivemedia.com.ph/cctv-training-course-philippines/#schedule)
     - User wants to ENROLL, REGISTER, SIGN UP, HOW TO JOIN → link to the Register section ([course-url]#register)
-      Example: "How do I register for Laravel?" → [Laravel — Register Here](https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#register)
+      Example: "How do I register for Laravel?" → Register Here: [Click Here](https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#register)
     - User asks for general INFO, DETAILS, OVERVIEW, OUTLINE → link to the Details section ([course-url]#details)
-      Example: "Tell me more about Python" → [Python — View Details](https://www.inventivemedia.com.ph/python-software-training-philippines/#details)
+      Example: "Tell me more about Python" → View Details: [Click Here](https://www.inventivemedia.com.ph/python-software-training-philippines/#details)
 
     Do NOT just give the base URL when a more specific section link applies.
     Do NOT display or guess the exact peso price — always direct users to the **Fees** section of the course page.
