@@ -1,70 +1,185 @@
 # Inventive Media Gemini Chatbot
 
-**A WordPress chatbot plugin powered by the Google Gemini API, designed to help visitors easily discover and inquire about Inventive Media's IT training courses.**
+AI-powered chatbot for WordPress using Google's Gemini API with customizable knowledge base.
 
-This document provides a comprehensive guide on what the plugin does, how the Gemini API enhances the visitor experience, and how to integrate it into your WordPress website.
+## Features
 
-## 📖 How It Works (Explanation)
+- **Google Gemini AI Integration** - Powered by Google's latest Gemini models
+- **Customizable Knowledge Base** - Edit the chatbot's knowledge directly from WordPress admin
+- **Conversation Logging** - Log conversations to Google Sheets for analysis
+- **Multiple AI Models** - Choose from various Gemini models (Flash, Pro, etc.)
+- **WordPress Admin Settings** - Easy configuration without touching code
+- **Dynamic Content Integration** - Automatically pulls content from WordPress posts/pages
+- **Face-to-Face Chat UI** - Modern, responsive chat interface
 
-The Inventive Media Gemini Chatbot leverages the **Gemini 2.5 Flash** model to provide intelligent, context-aware responses to website visitors exploring IT training courses. 
+## Installation
 
-**How the Gemini API helps the chatbot:**
-* **Intelligent Routing:** It understands natural language queries about courses, schedules, pricing, and promos.
-* **Contextual Knowledge:** It combines a hardcoded **Static Knowledge Base** with a **Dynamic Knowledge Base** (pulling directly from your WordPress posts and pages) to ensure answers are accurate, up-to-date, and strictly related to Inventive Media.
-* **Cost Optimization:** Specific common queries (like asking for "online courses") bypass the API with hardcoded responses to save Gemini API credits limit.
+1. Upload the `gemini-chatbot` folder to `/wp-content/plugins/`
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Go to **Settings → Gemini Chatbot** to configure
 
-**For Website Visitors:**
-Visitors simply click the chat icon in the bottom corner of the website. They can type questions or use quick-reply buttons (Courses, Promos, Schedule, Location). The assistant responds with concise, friendly answers and direct links to relevant course pages or Google Maps locations, streamlining their search for the right IT training.
+## Configuration
 
----
+### First-Time Setup
 
-## 🛠️ How to Integrate with WordPress (How-to Guide)
+1. Navigate to **WordPress Admin → Settings → Gemini Chatbot**
+2. Enter your **Google Gemini API Key** (get one from [Google AI Studio](https://aistudio.google.com/apikey))
+3. Configure other settings as needed
+4. Click **Save Settings**
 
-Follow these steps to install and display the chatbot on your site.
+### Settings Overview
 
-### 1. Installation
-1. Upload the `gemini-chatbot` folder to your `/wp-content/plugins/` directory.
-2. Go to the **Plugins** menu in your WordPress admin dashboard.
-3. Activate the **Inventive Media Gemini Chatbot** plugin.
+#### API Configuration
+- **API Key**: Your Google Gemini API key
+- **Model**: Select which Gemini model to use
+  - `gemini-2.0-flash-exp` - Latest experimental (recommended)
+  - `gemini-1.5-flash` - Fast and efficient
+  - `gemini-1.5-pro` - More capable, slower
+  - `gemini-3.1-flash-lite-preview` - Lightweight preview
+- **Temperature**: Controls response randomness (0-2)
+  - 0 = More focused and deterministic
+  - 2 = More creative and random
+  - Default: 0.7
+- **Max Output Tokens**: Maximum response length (128-8192)
+  - Default: 1024
 
-### 2. Displaying the Chatbot
-To display the chatbot interface to your visitors, simply use the following shortcode where you want the chat window to be loaded:
+#### Knowledge Base
+- **Static Knowledge Base**: Core information the chatbot uses
+  - Pre-filled with default Inventive Media knowledge
+  - Fully editable via textarea
+  - Can be reset to defaults
+  - Leave empty to use code defaults
 
-```text
+#### Conversation Logging
+- **Google Sheets Webhook URL**: URL to log conversations to Google Sheets
+- **Enable Logging**: Toggle conversation logging on/off
+
+#### General Settings
+- **Enable Chatbot**: Globally enable/disable the chatbot
+  - Uncheck to temporarily disable without deactivating plugin
+
+### Utilities
+- **Clear Dynamic Knowledge Cache**: Clear cached WordPress content
+  - Use after updating posts/pages that should be in the knowledge base
+
+## Usage
+
+### Display Chatbot
+
+Add the chatbot to any page or post using the shortcode:
+
+```
 [gemini_chat]
 ```
 
-*Tip: You can add this shortcode to a global footer widget or footer template file to make the chatbot available across your entire website seamlessly.*
+### Migration from Constants
 
----
+If you previously used constants (`GEMINI_API_KEY`, `GOOGLE_SHEETS_WEBHOOK_URL`), they will be automatically migrated to the database settings on first admin page load.
 
-## ⚙️ Configuration (How-to Guide)
+You can safely remove these constants from `wp-config.php` after migration.
 
-To make the plugin work, you must define your API keys and webhook URLs in your WordPress configuration (`wp-config.php`).
+## Google Sheets Logging Setup
 
-### Setting the Gemini API Key
-To connect the chatbot to Google's AI, define your Gemini API key. Edit your WordPress root directory's `wp-config.php` file and add the following line just before `/* That's all, stop editing! Happy publishing. */`:
+To log conversations to Google Sheets:
 
-```php
-define('GEMINI_API_KEY', 'your_actual_gemini_api_key_here');
+1. Create a new Google Sheet
+2. Create a Google Apps Script (Extensions → Apps Script)
+3. Use this script:
+
+```javascript
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  
+  sheet.appendRow([
+    new Date(),
+    data.message,
+    data.reply,
+    data.ip
+  ]);
+  
+  return ContentService.createTextOutput(JSON.stringify({success: true}));
+}
 ```
 
-### Setting up the Google Sheets Webhook
-The plugin includes a feature to log all user messages and chatbot replies to a Google Sheet. This is highly useful for quality monitoring and lead tracking. 
+4. Deploy as Web App (Execute as: Me, Access: Anyone)
+5. Copy the deployment URL to **Gemini Chatbot Settings → Google Sheets Webhook URL**
 
-To enable this, create a Google Apps Script Webhook that accepts POST requests, and define the URL in `wp-config.php`:
+## Customization
 
-```php
-define('GOOGLE_SHEETS_WEBHOOK_URL', 'your_google_script_webhook_url_here');
-```
+### Editing Knowledge Base
 
-*Note: The logging process is non-blocking, meaning it runs in the background and won't slow down the chat experience for your visitors.*
+1. Go to **Settings → Gemini Chatbot**
+2. Scroll to **Knowledge Base** section
+3. Edit the textarea with your custom knowledge
+4. Click **Save Settings**
 
----
+The knowledge base supports:
+- Company information
+- Course details
+- FAQs
+- Contact information
+- Any custom content you want the AI to reference
 
-## 📚 Technical Reference
+### Changing AI Behavior
 
-* **`gemini-chatbot.php`**: The main plugin file handling initialization, REST API endpoints (`/gemini-chat/v1/send`), shortcode registration, and the Google Sheets webhook POST requests.
-* **`knowledge-base.php`**: Contains the logic for gathering the static and dynamic text used to guide the Gemini model.
-* **`script.js` & `style.css`**: Handles the frontend user interface, asynchronous API calls, and animations.
-* **Transient Cache**: Dynamic knowledge is cached using WordPress transients (`gemini_chatbot_wp_context`). Updating any post or page automatically clears this cache to ensure Gemini reads the latest content.
+Adjust these settings to change how the AI responds:
+
+- **Temperature**: Lower = more focused, Higher = more creative
+- **Max Tokens**: Controls response length
+- **Model**: Different models have different capabilities and costs
+
+## Troubleshooting
+
+### "Sorry, I couldn't get a response"
+
+This error appears when:
+1. **Invalid API Key** - Check your API key in settings
+2. **No API Key Set** - Configure API key in settings
+3. **API Quota Exceeded** - Check your Google AI Studio quota
+4. **Network Error** - Check server connectivity
+
+**Solution**: Go to Settings → Gemini Chatbot and verify your API key
+
+### Chatbot Not Appearing
+
+1. Check if chatbot is enabled in **Settings → Gemini Chatbot → Enable Chatbot**
+2. Verify shortcode `[gemini_chat]` is on the page
+3. Check browser console for JavaScript errors
+
+### Conversations Not Logging
+
+1. Verify **Enable Logging** is checked
+2. Check **Google Sheets Webhook URL** is set correctly
+3. Test webhook URL directly
+4. Verify Google Apps Script deployment permissions
+
+## Version History
+
+### Version 2.1
+- Added WordPress Admin settings page
+- Database-driven configuration
+- Editable knowledge base via admin
+- Auto-migration from constants
+- Enable/disable toggle
+- Admin notices for setup
+
+### Version 2.0
+- Initial release with Gemini API integration
+- Static and dynamic knowledge base
+- Google Sheets logging
+- Hardcoded configuration
+
+## Credits
+
+**Developer**: Lathrell Pagsuguiron (Web Developer Intern)  
+**Company**: Inventive Media  
+**Year**: 2026  
+**LinkedIn**: [linkedin.com/in/lathrell](https://linkedin.com/in/lathrell)
+
+## Support
+
+For issues or questions:
+- Email: inventivemedia.ph@gmail.com
+- Phone: +63 936 9700874 / +63 933 1348856
+- Website: https://www.inventivemedia.com.ph/

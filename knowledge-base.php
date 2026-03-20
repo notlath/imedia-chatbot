@@ -16,6 +16,15 @@ if (! defined('ABSPATH')) {
 // ============================================================
 function gemini_get_static_knowledge()
 {
+    // First, try to get custom knowledge base from settings
+    $custom_kb = get_option('gemini_chatbot_static_kb', '');
+    
+    // If custom KB exists and is not empty, use it
+    if (!empty($custom_kb)) {
+        return $custom_kb;
+    }
+    
+    // Otherwise, return the default knowledge base
     return <<<'KB'
 === INVENTIVE MEDIA — OFFICIAL INFORMATION ===
 
@@ -52,6 +61,7 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 1. Adobe Photoshop CC 2026 — Essentials to Advanced | 3 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/
    Overview: Master Photoshop and Generative AI (Adobe Firefly, Generative Fill, Generative Expand) in 3 days with hands-on training in photo manipulation, retouching, and compositing.
+   Bonus: Enroll in this course and get the [GFX Design Essentials](https://www.inventivemedia.com.ph/graphic-design-essential-training-philippines/) for FREE (worth ₱750).
 
 2. Adobe Lightroom CC 2026 | 3 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/adobe-lightroom-graphic-design-course-philippines/
@@ -59,12 +69,14 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 
 3. Adobe Illustrator CC 2026 — Essentials to Advanced | 3 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/adobe-illustrator-philippines-training/
+   Bonus: Enroll in this course and get the [GFX Design Essentials](https://www.inventivemedia.com.ph/graphic-design-essential-training-philippines/) for FREE (worth ₱750).
 
 4. Adobe InDesign CC 2026 — Essentials to Advanced | 2 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/adobe-indesign-training-tutorial-philippines/
 
 5. CorelDRAW 2025 — Essentials to Advanced | 3 Days | 9am–7pm
    URL: https://www.inventivemedia.com.ph/corel-draw-training-philippines-graphic-design-course/
+   Bonus: Enroll in this course and get the [GFX Design Essentials](https://www.inventivemedia.com.ph/graphic-design-essential-training-philippines/) for FREE (worth ₱750).
 
 6. Adobe Animate CC | 2 Days
    URL: https://www.inventivemedia.com.ph/adobe-flash-phillippines-training/
@@ -130,7 +142,6 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
 24. Digital Marketing Fundamentals | 2 Days (Online | Virtual Setup)
     URL: https://www.inventivemedia.com.ph/digital-marketing-training-course-philippines/
     SETUP: This course is conducted in an Online | Virtual setup.
-    Overview: This introductory course provides a foundational overview of essential digital marketing concepts. It is perfect for beginners seeking a broad understanding of the field. For comprehensive, hands-on training in specific areas like running ad campaigns, we recommend our specialized programs such as Social Media Marketing or Google Ads.
 
 25. Search Engine Optimization (SEO) | 3 Days
     URL: https://www.inventivemedia.com.ph/seo-training-philippines/
@@ -191,6 +202,19 @@ All courses include: Face-to-Face instruction, Hands-on training, Globally Recog
     URL: https://www.inventivemedia.com.ph/itil-training-philippines-foundation-certification/
 
 === PROMOS & DISCOUNTS ===
+
+2026 Special Offers
+
+• New Students: Get ₱1,000 OFF  
+• Alumni: Get ₱1,500 OFF  
+
+Discounts are automatically applied when you enroll.
+
+Free Bonus Course  
+Enroll in Adobe Photoshop, Illustrator, or CorelDRAW and receive the GFX Design Essentials Course for FREE.
+
+Extra Perk  
+Enjoy unlimited class retakes for 1 year. 
 
 PROMO PAGE: https://www.inventivemedia.com.ph/training-promo/
 
@@ -293,20 +317,20 @@ NOTE: This is one of the most frequently asked questions. Inventive Media is an 
 
     Every course page has 4 tab sections. Always link users directly to the relevant section using these URL fragment patterns:
 
-      [course-url]#details   → View Details: Click Here (Description, Syllabus)
-      [course-url]#fees      → View Fees: Click Here (Pricing, Discounts)
-      [course-url]#schedule  → View Schedule: Click Here (Dates, Times)
-      [course-url]#register  → Register Now: Click Here (Enrollment Form)
+      [course-url]#details   → View Details (Description, Syllabus)
+      [course-url]#fees      → View Fees (Pricing, Discounts)
+      [course-url]#schedule  → View Schedule (Dates, Times)
+      [course-url]#register  → Register Now (Enrollment Form)
 
     LINKING RULES — follow these strictly:
     - User asks about PRICE, COST, FEE, HOW MUCH → link to the Fees section ([course-url]#fees)
-      Example: "How much is Photoshop?" → View Fees: [Click Here](https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#fees)
+      Example: "How much is Photoshop?" → [Adobe Photoshop — View Fees](https://www.inventivemedia.com.ph/adobe-photoshop-philippines-training/#fees)
     - User asks about SCHEDULE, DATES, WHEN, NEXT CLASS → link to the Schedule section ([course-url]#schedule)
-      Example: "When is the next CCTV class?" → View Schedule: [Click Here](https://www.inventivemedia.com.ph/cctv-training-course-philippines/#schedule)
+      Example: "When is the next CCTV class?" → [CCTV — View Schedule](https://www.inventivemedia.com.ph/cctv-training-course-philippines/#schedule)
     - User wants to ENROLL, REGISTER, SIGN UP, HOW TO JOIN → link to the Register section ([course-url]#register)
-      Example: "How do I register for Laravel?" → Register Here: [Click Here](https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#register)
+      Example: "How do I register for Laravel?" → [Laravel — Register Here](https://www.inventivemedia.com.ph/laravel-training-philippines-php-web-development/#register)
     - User asks for general INFO, DETAILS, OVERVIEW, OUTLINE → link to the Details section ([course-url]#details)
-      Example: "Tell me more about Python" → View Details: [Click Here](https://www.inventivemedia.com.ph/python-software-training-philippines/#details)
+      Example: "Tell me more about Python" → [Python — View Details](https://www.inventivemedia.com.ph/python-software-training-philippines/#details)
 
     Do NOT just give the base URL when a more specific section link applies.
     Do NOT display or guess the exact peso price — always direct users to the **Fees** section of the course page.
@@ -687,8 +711,6 @@ Certifications: Certified LEAN SIX SIGMA Yellow Belt, MCP/MCTS/MCSA/MCITP, ITIL 
 
 === PAYMENT OPTIONS ===
 
-IMPORTANT: We have discontinued the installment payment option due to collection challenges, as a significant number of students were unable to meet their payment obligations.
-
 We only request payment once the training is guaranteed to proceed. You will receive a confirmation notice from us before any deposit is required.
 
 Payment Schedule:
@@ -725,7 +747,6 @@ Mandatory Reply Policy:
 - IMPORTANT: This step is essential to distinguish legitimate applicants from the high volume of daily spam registrations (approx. 40%). Failure to acknowledge a reservation may result in the contact information being restricted from future registrations in the system.
 
 Payment Terms:
-- IMPORTANT: We have discontinued the installment payment option due to collection challenges, as a significant number of students were unable to meet their payment obligations.
 - Payment is only requested once the class is officially confirmed to proceed.
 - Face-to-Face: 50% downpayment upon confirmation; 50% balance on the first day.
 - Live Online: Full payment required upon confirmation.
