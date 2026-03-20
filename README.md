@@ -32,10 +32,10 @@ AI-powered chatbot for WordPress using Google's Gemini API with customizable kno
 #### API Configuration
 - **API Key**: Your Google Gemini API key
 - **Model**: Select which Gemini model to use
-  - `gemini-2.0-flash-exp` - Latest experimental (recommended)
-  - `gemini-1.5-flash` - Fast and efficient
-  - `gemini-1.5-pro` - More capable, slower
-  - `gemini-3.1-flash-lite-preview` - Lightweight preview
+  - **Gemini 2.5 Series**: `gemini-2.5-pro`, `gemini-2.5-flash`, `gemini-2.5-flash-lite`
+  - **Gemini 2.0 Series**: `gemini-2.0-flash` (Recommended), `gemini-2.0-flash-lite`
+  - **Gemini 1.5 Series**: `gemini-1.5-pro`, `gemini-1.5-flash`, `gemini-1.5-flash-8b`
+  - **Preview Models**: `gemini-3.1-pro-preview`, `gemini-3.1-flash-lite-preview`, `gemini-3-pro-preview`, `gemini-3-flash-preview`
 - **Temperature**: Controls response randomness (0-2)
   - 0 = More focused and deterministic
   - 2 = More creative and random
@@ -163,6 +163,7 @@ This error appears when:
 - Auto-migration from constants
 - Enable/disable toggle
 - Admin notices for setup
+- Support for latest Gemini 2.5 and 3.x preview models
 
 ### Version 2.0
 - Initial release with Gemini API integration
