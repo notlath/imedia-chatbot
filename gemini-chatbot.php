@@ -55,14 +55,14 @@
     );
 
     wp_localize_script('gemini-chat-script', 'chatConfig', [
-        'apiUrl' => rest_url('gemini-chat/v1/send'),
+        'apiUrl' => rest_url('gemini-chat/v1/send/'),
         'nonce'  => wp_create_nonce('wp_rest'),
     ]);
     });
 
     // 2. Register API Endpoint
     add_action('rest_api_init', function () {
-    register_rest_route('gemini-chat/v1', '/send', [
+    register_rest_route('gemini-chat/v1', '/send/?', [
         'methods'             => 'POST',
         'callback'            => 'handle_gemini_chat',
         'permission_callback' => function ($request) {
