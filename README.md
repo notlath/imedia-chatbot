@@ -181,6 +181,6 @@ This error appears when:
 ## Support
 
 For issues or questions:
-- Email: inventivemedia.ph@gmail.com
+- Email: imediacctv@gmail.com
 - Phone: +63 936 9700874 / +63 933 1348856
 - Website: https://www.inventivemedia.com.ph/

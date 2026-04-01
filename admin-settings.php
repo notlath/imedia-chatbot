@@ -61,6 +61,7 @@ function gemini_chatbot_register_settings()
     register_setting('gemini_chatbot_settings_group', 'gemini_chatbot_max_tokens');
     
     // Knowledge Base Section
+    register_setting('gemini_chatbot_settings_group', 'gemini_chatbot_behavior');
     register_setting('gemini_chatbot_settings_group', 'gemini_chatbot_static_kb');
     
     // Logging Section
@@ -132,6 +133,14 @@ function gemini_chatbot_register_settings()
     );
     
     // Knowledge Base Fields
+    add_settings_field(
+        'gemini_chatbot_behavior',
+        'AI System Prompt / Behavior',
+        'gemini_chatbot_behavior_callback',
+        'gemini-chatbot-settings',
+        'gemini_chatbot_kb_section'
+    );
+    
     add_settings_field(
         'gemini_chatbot_static_kb',
         'Static Knowledge Base',
@@ -256,6 +265,26 @@ function gemini_chatbot_max_tokens_callback()
     <input type="number" name="gemini_chatbot_max_tokens" value="<?php echo esc_attr($max_tokens); ?>" 
            min="128" max="8192" step="128" class="small-text" />
     <p class="description">Maximum length of generated responses. Recommended: 1024</p>
+    <?php
+}
+
+function gemini_chatbot_behavior_callback()
+{
+    $behavior = get_option('gemini_chatbot_behavior', '');
+    
+    // Load default from knowledge-base.php if empty
+    if (empty($behavior) && function_exists('gemini_get_default_behavior')) {
+        $behavior = gemini_get_default_behavior();
+    }
+    ?>
+    <textarea name="gemini_chatbot_behavior" rows="15" class="large-text code" 
+              placeholder="Enter your system prompt/behavior context..."><?php echo esc_textarea($behavior); ?></textarea>
+    <p class="description">Define how the AI behaves, its rules, and its constraints. Leave empty to use default from code.</p>
+    <button type="button" class="button" onclick="if(confirm('Reset behavioral rules to default?')) { 
+        document.querySelector('[name=gemini_chatbot_behavior]').value = ''; 
+        alert('Behavior will reset to defaults on save.'); 
+    }">Reset to Default</button>
+    <br><br>
     <?php
 }
 
